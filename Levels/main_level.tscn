@@ -1,8 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dv47lqd42sq2a"]
 
-[ext_resource type="Texture2D" uid="uid://cp06k2ge0iniw" path="res://icon.svg" id="1_0bunj"]
+[ext_resource type="PackedScene" uid="uid://7bpr63gggfgp" path="res://AI/ai_customer.tscn" id="1_230nx"]
 
 [node name="MainScene" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_0bunj")
+[node name="AI_Customer" parent="." instance=ExtResource("1_230nx")]

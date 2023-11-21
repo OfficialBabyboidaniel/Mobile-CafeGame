@@ -1,3 +1,9 @@
+Area2D
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+RigidBody2D
+AnimatedSprite2D
 VBoxContainer
 HBoxContainer
 MarginContainer
@@ -6,4 +12,3 @@ Label
 TextEdit
 HSlider
 Button
-Sprite2D
