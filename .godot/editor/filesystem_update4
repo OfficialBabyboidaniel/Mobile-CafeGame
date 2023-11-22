@@ -1,1 +1,11 @@
+res://AI/Text_Box.tscn
+res://TestAssets/test.tres
+res://TestAssets/new_atlas_texture.tres
+res://AI/Text_Box.gd
+res://AI/ai_customer.tscn
+res://AI/DialogManager.gd
+res://Sprite2D.gd
 res://Menu/menu.tscn
+res://Levels/main_level.tscn
+res://Menu/Options_menu/Options_menu.tscn
+res://AI/CustomCollisionArea.tscn
