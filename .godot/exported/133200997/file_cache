@@ -1,3 +1,9 @@
-res://Levels/main_level.tscn::4c0372ccc58fc35b4f79059f880cbd05::1700600096::res://.godot/exported/133200997/export-6ba2fee8ab062604db653d059235c61f-main_level.scn
-res://Menu/Options_menu/Options_menu.tscn::b94d14026976620422c1fa37fd3a3a1d::1700600096::res://.godot/exported/133200997/export-c60821d413c8735d56810cbf0f8feb2e-Options_menu.scn
-res://Menu/menu.tscn::211b8ea0bb424243ec76ef081ddb66e0::1700600096::res://.godot/exported/133200997/export-3434759f62901cfe03daf60960148161-menu.scn
+res://Levels/main_level.tscn::3bb8f60fef14d3354a382942afadb91c::1700684691::res://.godot/exported/133200997/export-6ba2fee8ab062604db653d059235c61f-main_level.scn
+res://Menu/Options_menu/Options_menu.tscn::b94d14026976620422c1fa37fd3a3a1d::1700684389::res://.godot/exported/133200997/export-c60821d413c8735d56810cbf0f8feb2e-Options_menu.scn
+res://Menu/menu.tscn::79a42f0315030769c34e12b28391f193::1700684521::res://.godot/exported/133200997/export-3434759f62901cfe03daf60960148161-menu.scn
+res://AI/ai_customer.tscn::28494dcc39201a95d0e4b07cfde61051::1700684521::res://.godot/exported/133200997/export-86949bf41a5907a90f9b5093c0eae437-ai_customer.scn
+res://AI/CustomCollisionArea.tscn::8264f5844f9af0032fab3a95150c0826::1700684521::res://.godot/exported/133200997/export-919d9f836056660d88b3ec6df5f8a346-CustomCollisionArea.scn
+res://AI/Text_Box.tscn::0ff320d4a93623aba643a85289949bf6::1700684521::res://.godot/exported/133200997/export-675d39e2f30edf65cab4fb7986cc0b93-Text_Box.scn
+res://TestAssets/sprites/characters/new_atlas_texture.tres::ee3893669f99357bf823a9a291b33ca4::1700684521::res://.godot/exported/133200997/export-e902034141e77dd2575ba8a909c005f9-new_atlas_texture.res
+res://TestAssets/new_atlas_texture.tres::8fcb7791efad9ed65d076cce23caa649::1700684521::res://.godot/exported/133200997/export-d5cc0aeb07ebd91170cb6cfd2d8c4721-new_atlas_texture.res
+res://TestAssets/test.tres::0308b6d1e16a6c4af8a23759791636e5::1700684521::res://.godot/exported/133200997/export-0defa880cb30999280517a5ec7f79cc9-test.res
