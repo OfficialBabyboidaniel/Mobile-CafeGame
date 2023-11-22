@@ -1,0 +1,36 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://b0e7im8kxge8f"]
+
+[ext_resource type="Texture2D" uid="uid://db7xc7kxi8nei" path="res://TestAssets/new_atlas_texture.tres" id="1_bey3n"]
+[ext_resource type="Texture2D" uid="uid://bok2053lmk70i" path="res://TestAssets/sprites/characters/DialougeBOXES.png" id="2_aouym"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tpco"]
+atlas = ExtResource("2_aouym")
+region = Rect2(56, 90, 74, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpf6u"]
+atlas = ExtResource("2_aouym")
+region = Rect2(130, 90, 74, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1krb"]
+atlas = ExtResource("2_aouym")
+region = Rect2(130, 0, 74, 90)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bey3n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tpco")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpf6u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1krb")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://butyttap6670y"]
+
+[ext_resource type="Script" path="res://AI/Text_Box.gd" id="1_xyvrm"]
+[ext_resource type="Texture2D" uid="uid://db7xc7kxi8nei" path="res://TestAssets/new_atlas_texture.tres" id="2_lt5ap"]
+
+[sub_resource type="SystemFont" id="SystemFont_j1fij"]
+multichannel_signed_distance_field = true
+
+[node name="MarginContainer" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 39.0
+script = ExtResource("1_xyvrm")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_lt5ap")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_j1fij")
+vertical_alignment = 1
+
+[node name="LetterDisplayTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="LetterDisplayTimer" to="." method="_on_letter_display_timer_timeout"]

@@ -5,3 +5,4 @@
 [node name="MainScene" type="Node2D"]
 
 [node name="AI_Customer" parent="." instance=ExtResource("1_230nx")]
+scale = Vector2(7.72001, 5.76)
