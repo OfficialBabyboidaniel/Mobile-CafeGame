@@ -14,6 +14,7 @@ var is_dialog_active = false
 var can_advance_line = false
 
 signal conversation_finished()
+signal order_completed()
 
 func start_dialog(position: Vector2, lines: Array[String]):
 	if is_dialog_active:
@@ -39,12 +40,18 @@ func _unhandled_input(event):
 	if(event.is_action_pressed("advance_dialog") && is_dialog_active && can_advance_line):
 		text_box.queue_free()
 		current_line_index += 1
-		if(current_line_index >= dialog_lines.size()):
+		if(current_line_index >= dialog_lines.size() && !GlobalSingleton.has_made_coffe):
 			conversation_finished.emit()
+			GlobalSingleton.has_made_coffe = true
 			print("consversation signal emittad")
 			is_dialog_active = false
 			current_line_index = 0
-			
+			return
+		if(current_line_index >= dialog_lines.size() && GlobalSingleton.has_made_coffe): 
+			GlobalSingleton.has_made_coffe = false
+			order_completed.emit()
+			is_dialog_active = false
+			current_line_index = 0
 			return
 		
 		_show_text_box()
