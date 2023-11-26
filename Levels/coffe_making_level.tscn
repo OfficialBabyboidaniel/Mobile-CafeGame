@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://diofe6a7d7mxi"]
 
 [ext_resource type="Texture2D" uid="uid://brw841kepjryb" path="res://TestAssets/sprites/characters/skeleton.png" id="1_1cvxe"]
-[ext_resource type="Script" path="res://Levels/coffe_making_level.gd" id="1_6pj3c"]
+[ext_resource type="Script" path="res://Scripts/Level_Managers/coffe_making_level.gd" id="1_wnegu"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_6pj3c")
+script = ExtResource("1_wnegu")
 
 [node name="Skeleton" type="Sprite2D" parent="."]
 position = Vector2(474, 229)

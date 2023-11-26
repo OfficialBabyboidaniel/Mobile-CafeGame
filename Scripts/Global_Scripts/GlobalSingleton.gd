@@ -2,7 +2,7 @@ extends Node
 
 var has_made_coffe : bool = false
 
-@onready var AI_customer = preload("res://AI/ai_customer.tscn")
+@onready var AI_customer = preload("res://Scenes/AI/ai_customer.tscn")
 var spawn_timer: Timer
 
 func _ready():
