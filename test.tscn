@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsd7h6xbo75wt"]
+
+[ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes/Miscallenous/rest_zone.tscn" id="1_qsr4q"]
+[ext_resource type="PackedScene" uid="uid://dhgfcksjk8krn" path="res://Scenes/Coffe_Making/coffee_mug.tscn" id="2_ocrr5"]
+[ext_resource type="PackedScene" uid="uid://kuf72fxyr0nq" path="res://Scenes/Coffe_Making/coffe_machine.tscn" id="3_qrfwf"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(365, 144)
+scale = Vector2(1.02226, 1.00758)
+
+[node name="rest_zone" parent="." instance=ExtResource("1_qsr4q")]
+position = Vector2(-30, 74)
+
+[node name="rest_zone2" parent="." instance=ExtResource("1_qsr4q")]
+position = Vector2(199, 61)
+
+[node name="coffee_mug" parent="." instance=ExtResource("2_ocrr5")]
+position = Vector2(82, 73)
+
+[node name="coffee_machine" parent="." instance=ExtResource("3_qrfwf")]
+position = Vector2(74.345, 298.736)

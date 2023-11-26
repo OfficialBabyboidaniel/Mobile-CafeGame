@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhgfcksjk8krn"]
+
+[ext_resource type="Script" path="res://Scripts/Main_Gameplay/coffee_mug.gd" id="1_a03yh"]
+[ext_resource type="Texture2D" uid="uid://cv4rcvljtu3sb" path="res://TestAssets/sprites/objects/chest_01.png" id="2_cd3ar"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6l5l"]
+size = Vector2(64, 20)
+
+[node name="coffee_mug" type="Area2D"]
+z_index = 1
+script = ExtResource("1_a03yh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_cd3ar")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_x6l5l")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

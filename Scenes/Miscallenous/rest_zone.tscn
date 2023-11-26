@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://uxe1fxoxhllu"]
+
+[ext_resource type="Script" path="res://Scripts/Miscallenous/rest_zone.gd" id="1_d8n8y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s40vw"]
+
+[node name="rest_zone" type="Area2D" groups=["zone"]]
+script = ExtResource("1_d8n8y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s40vw")
+
+[connection signal="draw" from="." to="." method="_on_draw"]
