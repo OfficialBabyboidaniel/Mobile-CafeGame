@@ -11,3 +11,4 @@ script = ExtResource("1_d8n8y")
 shape = SubResource("RectangleShape2D_s40vw")
 
 [connection signal="draw" from="." to="." method="_on_draw"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
