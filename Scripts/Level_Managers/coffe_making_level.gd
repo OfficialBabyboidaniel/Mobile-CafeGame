@@ -10,6 +10,6 @@ func _ready():
 func _process(delta):
 	pass
 func _unhandled_input(event):
-	if(event.is_action_pressed("advance_dialog")):
-		get_tree().change_scene_to_file("res://Levels/main_level.tscn")
-	
+#	if(event.is_action_pressed("Action")):
+#		get_tree().change_scene_to_file("res://Levels/main_level.tscn")
+	pass

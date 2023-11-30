@@ -1,2 +1,15 @@
 res://UI/Start_Menu/menu.tscn
 res://TestAssets/test.tres
+res://Levels/main_level.tscn
+res://UI/Options_menu/Options_menu.tscn
+res://Scenes/AI/ai_customer.tscn
+res://Scenes/AI/CustomCollisionArea.tscn
+res://Scenes/AI/Text_Box.tscn
+res://Scenes/Coffe_Making/coffe_machine.tscn
+res://Scenes/Coffe_Making/coffee_mug.tscn
+res://Scenes/Miscallenous/rest_zone.tscn
+res://test.tscn
+res://Levels/coffe_making_level.tscn
+res://Scripts/Main_Gameplay/coffe_machine.gd
+res://Scripts/Level_Managers/coffe_making_level.gd
+res://Scripts/Miscallenous/rest_zone.gd
