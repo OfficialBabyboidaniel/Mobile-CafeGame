@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv47lqd42sq2a"]
+
+[ext_resource type="Script" path="res://Scripts/Level_Managers/main_level.gd" id="1_6pvw3"]
+[ext_resource type="PackedScene" uid="uid://7bpr63gggfgp" path="res://Scenes/AI/ai_customer.tscn" id="2_v17b7"]
+[ext_resource type="Texture2D" uid="uid://cwn807smob1pa" path="res://Assets/Levels/Main_level.png" id="3_8pd3o"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_6pvw3")
+
+[node name="AI_Customer" parent="." instance=ExtResource("2_v17b7")]
+position = Vector2(1320, 800)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1328, 808)
+texture = ExtResource("3_8pd3o")
