@@ -4,6 +4,8 @@ var has_mug
 var rest_zone
 var timer : Timer
 var coffe_filled : bool = false
+
+signal coffe_is_done()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	has_mug = false
@@ -40,5 +42,6 @@ func _on_input_event(viewport, event, shape_idx):
 func _on_timer_timeout():
 	timer.stop()
 	coffe_filled = true;
+	coffe_is_done.emit()
 	print("coffe filleed")
 

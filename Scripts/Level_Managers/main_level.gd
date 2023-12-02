@@ -11,4 +11,4 @@ func _process(delta):
 	pass
 
 func _change_scene():
-	get_tree().change_scene_to_file("res://Levels/coffe_making_level.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/coffe_making_level.tscn")

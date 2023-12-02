@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://butyttap6670y"]
 
 [ext_resource type="Script" path="res://Scripts/UI/Text_Box.gd" id="1_c7itm"]
-[ext_resource type="Texture2D" uid="uid://db7xc7kxi8nei" path="res://TestAssets/new_atlas_texture.tres" id="2_77xut"]
+[ext_resource type="Texture2D" uid="uid://dqp6u4e2k4abj" path="res://Assets/Character/ChatBubble.png" id="2_u1e4w"]
 
 [sub_resource type="SystemFont" id="SystemFont_j1fij"]
 multichannel_signed_distance_field = true
@@ -13,7 +13,7 @@ script = ExtResource("1_c7itm")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 2
-texture = ExtResource("2_77xut")
+texture = ExtResource("2_u1e4w")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2

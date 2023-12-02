@@ -5,10 +5,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s40vw"]
 
 [node name="rest_zone" type="Area2D" groups=["zone"]]
+position = Vector2(0, -2)
 script = ExtResource("1_d8n8y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_s40vw")
 
 [connection signal="draw" from="." to="." method="_on_draw"]
-[connection signal="input_event" from="." to="." method="_on_input_event"]
