@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+#dialouges to choose from, will have to be remade later. should their be dialoges specific per char or different random dialogues for every char
 const lines: Array[String] = [
 	"hey i want a coffe",
 	"A cafe latte please",
@@ -7,6 +8,8 @@ const lines: Array[String] = [
 ]
 
 const thank_you_line: Array[String] = ["Thank you for the coffe"]
+
+
 signal customer_recieved_order()
 
 # Called when the node enters the scene tree for the first time.
@@ -17,13 +20,7 @@ func _ready():
 		DialogManager.start_dialog(global_position, lines)
 	DialogManager.order_completed.connect(_killCustomer)
 	
-		
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	#move_local_y(5 * delta);
-	pass
-	
 func _killCustomer():
 	
 	queue_free()
