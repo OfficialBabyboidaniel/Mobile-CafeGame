@@ -14,11 +14,6 @@ func _ready():
 	rest_zone.rested.connect(addCoffeMug)
 	#rest_zone.un_rested.connect(removeCoffeMug)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
 func addCoffeMug():
 	if not has_mug:
 		has_mug = true
@@ -32,7 +27,7 @@ func removeCoffeMug():
 		timer.stop()
 
 
-func _on_input_event(viewport, event, shape_idx):
+func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and has_mug and timer.time_left <= 0 and !coffe_filled:
 		timer.start()
 		print(timer.time_left)

@@ -8,11 +8,6 @@ func _ready():
 	coffeMachine = $coffee_machine
 	coffeMachine.coffe_is_done.connect(coffe_done)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func _unhandled_input(event):
 	#if bool set, make it able to change scene
 	if(event.is_action_pressed("Action") && coffeIsDone):
