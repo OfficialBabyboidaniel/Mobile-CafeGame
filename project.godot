@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 DialogManager="*res://Scripts/Global_Scripts/DialogManager.gd"
 GlobalSingleton="*res://Scripts/Global_Scripts/GlobalSingleton.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 Action={

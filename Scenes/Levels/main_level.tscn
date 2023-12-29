@@ -8,9 +8,11 @@
 script = ExtResource("1_6pvw3")
 
 [node name="AI_Customer" parent="." instance=ExtResource("2_v17b7")]
-position = Vector2(1320, 800)
+position = Vector2(590, 336)
+scale = Vector2(0.3, 0.3)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(1328, 808)
+position = Vector2(576, 320)
+scale = Vector2(0.438861, 0.337696)
 texture = ExtResource("3_8pd3o")

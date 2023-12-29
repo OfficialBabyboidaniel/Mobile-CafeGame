@@ -9,11 +9,13 @@
 script = ExtResource("1_uw0t4")
 
 [node name="default_rest_zone" parent="." instance=ExtResource("2_6erho")]
-position = Vector2(1675, 545)
-scale = Vector2(22.68, 16.24)
+position = Vector2(733, 425)
+scale = Vector2(4.90214, 8.55055)
 
 [node name="coffee_mug" parent="." instance=ExtResource("3_02n7t")]
-position = Vector2(1592, 541)
+position = Vector2(727, 405)
+scale = Vector2(0.4, 0.4)
 
 [node name="coffee_machine" parent="." instance=ExtResource("4_j25cv")]
-position = Vector2(425, 837)
+position = Vector2(198, 478)
+scale = Vector2(0.411, 0.4)
