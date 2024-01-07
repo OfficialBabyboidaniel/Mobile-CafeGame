@@ -23,8 +23,8 @@ shape = SubResource("RectangleShape2D_pcloc")
 
 [node name="rest_zone" parent="." instance=ExtResource("3_30awb")]
 z_index = 2
-position = Vector2(3, -70)
-scale = Vector2(21.6216, 20.6987)
+position = Vector2(1, -70)
+scale = Vector2(28.2216, 20.6987)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0

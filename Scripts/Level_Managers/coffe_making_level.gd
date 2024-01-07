@@ -7,7 +7,6 @@ var coffeIsDone
 func _ready():
 	coffeMachine = $coffee_machine
 	coffeMachine.coffe_is_done.connect(coffe_done)
-
 func _unhandled_input(event):
 	#if bool set, make it able to change scene
 	if(event.is_action_pressed("Action") && coffeIsDone):

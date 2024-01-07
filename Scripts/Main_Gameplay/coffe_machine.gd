@@ -1,9 +1,10 @@
 extends Area2D
 
-var has_mug
+var has_mug : bool = false
 var rest_zone
 var timer : Timer
 var coffe_filled : bool = false
+var coffemug
 
 signal coffe_is_done()
 # Called when the node enters the scene tree for the first time.
@@ -11,14 +12,18 @@ func _ready():
 	has_mug = false
 	timer =  $Timer
 	rest_zone = $rest_zone
+	coffemug = get_tree().get_class()
 	rest_zone.rested.connect(addCoffeMug)
-	#rest_zone.un_rested.connect(removeCoffeMug)
+	coffe_filled = false
 
-func addCoffeMug():
-	if not has_mug:
+func addCoffeMug(current_item):
+	print("coffe muggelse : ", current_item)
+	if(!is_instance_valid(current_item)):
+		print("coffe mug not valid returning")
+		return
+	if not has_mug and current_item.is_in_group("CoffeMug") and !Input.is_action_pressed("Action"):
 		has_mug = true
-		
-	# what if it has a mug
+		current_item.set_is_processing_enabled(false)
 
 func removeCoffeMug():
 	if has_mug:
