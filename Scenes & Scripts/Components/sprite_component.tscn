@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4ee62bxrspvk"]
+
+[ext_resource type="Texture2D" uid="uid://bupagn6r5x6b0" path="res://Assets/Coffe/Coffe mug.png" id="1_d6kcu"]
+
+[node name="SpriteComponent" type="Sprite2D"]
+texture = ExtResource("1_d6kcu")

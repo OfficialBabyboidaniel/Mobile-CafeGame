@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://7bpr63gggfgp"]
+
+[ext_resource type="Script" path="res://Scenes & Scripts/AI/AI.gd" id="1_edehf"]
+[ext_resource type="Texture2D" uid="uid://webhf8368kkl" path="res://Assets/Character/Vexa-Char.png" id="2_s0nq8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1aat6"]
+size = Vector2(64, 112)
+
+[node name="AI_Customer" type="CharacterBody2D"]
+script = ExtResource("1_edehf")
+
+[node name="CharacterBody2D" type="Sprite2D" parent="."]
+position = Vector2(0.600098, 6.3999)
+texture = ExtResource("2_s0nq8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -752)
+shape = SubResource("RectangleShape2D_1aat6")

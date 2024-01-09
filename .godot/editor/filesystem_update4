@@ -1,12 +1,1 @@
-res://Scenes/Levels/coffe_making_level.tscn
 res://TestAssets/test.tres
-res://Scripts/Level_Managers/coffe_making_level.gd
-res://Scenes/Coffe_Making/coffe_machine.tscn
-res://Scenes/Coffe_Making/coffee_mug.tscn
-res://Scenes/Miscallenous/rest_zone.tscn
-res://Scenes/Levels/Start_Level.tscn
-res://Scenes/Levels/main_level.tscn
-res://Scripts/Main_Gameplay/coffee_mug.gd
-res://Scripts/Miscallenous/rest_zone.gd
-res://Scripts/UI/Menu.gd
-res://Scripts/Main_Gameplay/coffe_machine.gd
