@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsrmy32uv8syl"]
 
-[ext_resource type="PackedScene" uid="uid://by8ljrxw06xim" path="res://Scenes & Scripts/UI/menu.tscn" id="1_4fvfs"]
+[ext_resource type="PackedScene" uid="uid://by8ljrxw06xim" path="res://Scenes & Scripts/UI/Start_Level/menu.tscn" id="1_4fvfs"]
 [ext_resource type="Texture2D" uid="uid://dx27klnmnn5bp" path="res://Assets/Levels/StartLevel.png" id="2_dql82"]
 
 [node name="StartScene" type="Node2D"]

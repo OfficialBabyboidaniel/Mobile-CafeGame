@@ -12,13 +12,13 @@ config_version=5
 
 config/name="Mobile-cafe Game"
 run/main_scene="res://Scenes & Scripts/Levels/Start_Level.tscn"
-config/features=PackedStringArray("4.1", "Mobile")
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-DialogManager="*res://Scripts/Global_Scripts/DialogManager.gd"
-GlobalSingleton="*res://Scripts/Global_Scripts/GlobalSingleton.gd"
+DialogManager="*res://Scenes & Scripts/AI/Dialogue/Dialog_Manager.gd"
+GlobalSingleton="*res://Scenes & Scripts/Global/Global_Singleton.gd"
 
 [display]
 
