@@ -19,7 +19,6 @@ signal order_completed()
 func start_dialog(position: Vector2, lines: Array[String]):
 	if is_dialog_active:
 		return
-	
 	dialog_lines = lines
 	text_box_position = position
 	_show_text_box()

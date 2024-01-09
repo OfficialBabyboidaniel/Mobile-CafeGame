@@ -1,19 +1,19 @@
 [gd_scene load_steps=6 format=3 uid="uid://kuf72fxyr0nq"]
 
-[ext_resource type="Script" path="res://Scripts/Main_Gameplay/coffe_machine.gd" id="1_ypt6p"]
-[ext_resource type="SpriteFrames" uid="uid://b0e7im8kxge8f" path="res://TestAssets/test.tres" id="2_367fn"]
-[ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes/Miscallenous/rest_zone.tscn" id="3_30awb"]
-[ext_resource type="Texture2D" uid="uid://dmbn21mfsgxt3" path="res://Assets/Coffe/Coffe machine.png" id="4_rw8si"]
+[ext_resource type="Script" path="res://Scripts/Main_Gameplay/coffe_machine.gd" id="1_7qnwf"]
+[ext_resource type="SpriteFrames" uid="uid://b0e7im8kxge8f" path="res://TestAssets/test.tres" id="2_i0l3b"]
+[ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes & Scripts/Miscallenous/rest_zone.tscn" id="3_wx0ab"]
+[ext_resource type="Texture2D" uid="uid://dmbn21mfsgxt3" path="res://Assets/Coffe/Coffe machine.png" id="4_o0t5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pcloc"]
 size = Vector2(751, 943)
 
 [node name="coffee_machine" type="Area2D"]
-script = ExtResource("1_ypt6p")
+script = ExtResource("1_7qnwf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = -1
-sprite_frames = ExtResource("2_367fn")
+sprite_frames = ExtResource("2_i0l3b")
 animation = &"new_animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -21,7 +21,7 @@ z_index = 1
 position = Vector2(-0.5, -161.5)
 shape = SubResource("RectangleShape2D_pcloc")
 
-[node name="rest_zone" parent="." instance=ExtResource("3_30awb")]
+[node name="rest_zone" parent="." instance=ExtResource("3_wx0ab")]
 z_index = 2
 position = Vector2(1, -70)
 scale = Vector2(28.2216, 20.6987)
@@ -30,7 +30,7 @@ scale = Vector2(28.2216, 20.6987)
 wait_time = 5.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("4_rw8si")
+texture = ExtResource("4_o0t5g")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

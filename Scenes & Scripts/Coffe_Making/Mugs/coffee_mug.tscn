@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhgfcksjk8krn"]
+
+[ext_resource type="Script" path="res://Scripts/Main_Gameplay/coffee_mug.gd" id="1_a03yh"]
+[ext_resource type="PackedScene" uid="uid://d4ee62bxrspvk" path="res://Scenes & Scripts/Component/sprite_component.tscn" id="2_cbtrk"]
+[ext_resource type="PackedScene" uid="uid://xwor8nx210pm" path="res://Scenes & Scripts/Component/collision_shape_component.tscn" id="3_rboyw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d832m"]
+size = Vector2(58.5366, 16.9819)
+
+[node name="coffee_mug" type="Area2D" groups=["CoffeMug", "MovableObjects"]]
+z_index = 1
+script = ExtResource("1_a03yh")
+
+[node name="SpriteComponent" parent="." instance=ExtResource("2_cbtrk")]
+
+[node name="collision_shape_component" parent="." instance=ExtResource("3_rboyw")]
+position = Vector2(-0.999997, 49.5)
+shape = SubResource("RectangleShape2D_d832m")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
