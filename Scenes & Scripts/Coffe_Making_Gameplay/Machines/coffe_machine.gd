@@ -34,7 +34,7 @@ func _process(delta):
 	if (holding_object_at_rest_zone == true and !Input.is_action_pressed("Action")):
 		print("dropped mug at rest zone, setting variables")
 		holding_object_at_rest_zone = false
-		if(coffemug.is_in_group("CoffeMug")): #måste lägga till att de inte går att röra muggen här
+		if(coffemug.is_in_group("CoffeMug")): 
 			print("mug is of coffe mug")
 			has_coffe_mug = true
 			coffemug.get_node("dragging_component").set_is_processing_enabled(false)
