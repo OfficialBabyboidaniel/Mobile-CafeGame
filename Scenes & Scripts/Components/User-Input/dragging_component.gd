@@ -11,6 +11,7 @@ var rest_nodes = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	is_processing_enabled = true
 	rest_nodes = get_tree().get_nodes_in_group("zone")
 	if rest_nodes.size() > 0:
 		rest_point = rest_nodes[0].global_position

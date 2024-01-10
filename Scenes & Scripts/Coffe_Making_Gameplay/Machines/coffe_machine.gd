@@ -18,7 +18,6 @@ func _ready():
 	holding_object_at_rest_zone = false
 	timer =  $Timer
 	rest_zone = $rest_zone
-#	coffemug = get_tree().get_class()
 	rest_zone.object_entered_rest_zone.connect(should_add_coffe_mug)
 
 func should_add_coffe_mug(rest_zone, current_item):
@@ -38,6 +37,7 @@ func _process(delta):
 		if(coffemug.is_in_group("CoffeMug")): #måste lägga till att de inte går att röra muggen här
 			print("mug is of coffe mug")
 			has_coffe_mug = true
+			coffemug.get_node("dragging_component").set_is_processing_enabled(false)
 
 #gå igenom
 func removeCoffeMug():

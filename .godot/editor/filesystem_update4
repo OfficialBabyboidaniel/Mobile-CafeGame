@@ -1,11 +1,13 @@
+res://Scenes & Scripts/Levels/coffe_making_level.tscn
+res://TestAssets/test.tres
 res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.tscn
-res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.gd
 res://Scenes & Scripts/UI/Start_Level/menu.tscn
 res://Scenes & Scripts/UI/Options_menu.tscn
 res://Scenes & Scripts/Components/User-Input/dragging_component.tscn
-res://TestAssets/test.tres
-res://Scenes & Scripts/Levels/coffe_making_level.tscn
-res://Scenes & Scripts/Components/User-Input/dragging_component.gd
-res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.gd
 res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.tscn
-res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.gd
+res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.gd
+res://Scenes & Scripts/Components/sprite_component.tscn
+res://Scenes & Scripts/Components/collision_shape_component.tscn
+res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.gd
+res://Scenes & Scripts/Components/User-Input/dragging_component.gd
+res://Scenes & Scripts/Levels/coffe_making_level.gd

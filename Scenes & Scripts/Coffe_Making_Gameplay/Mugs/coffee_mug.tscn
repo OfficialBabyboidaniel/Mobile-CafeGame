@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhgfcksjk8krn"]
+[gd_scene load_steps=7 format=3 uid="uid://dhgfcksjk8krn"]
 
 [ext_resource type="Script" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.gd" id="1_a03yh"]
 [ext_resource type="PackedScene" uid="uid://d4ee62bxrspvk" path="res://Scenes & Scripts/Components/sprite_component.tscn" id="2_cbtrk"]
+[ext_resource type="Texture2D" uid="uid://bupagn6r5x6b0" path="res://Assets/Coffe/Coffe mug.png" id="3_4kty2"]
 [ext_resource type="PackedScene" uid="uid://xwor8nx210pm" path="res://Scenes & Scripts/Components/collision_shape_component.tscn" id="3_rboyw"]
 [ext_resource type="PackedScene" uid="uid://055lldcf06ym" path="res://Scenes & Scripts/Components/User-Input/dragging_component.tscn" id="4_y5pr7"]
 
@@ -13,6 +14,7 @@ z_index = 1
 script = ExtResource("1_a03yh")
 
 [node name="SpriteComponent" parent="." instance=ExtResource("2_cbtrk")]
+texture = ExtResource("3_4kty2")
 
 [node name="dragging_component" parent="." instance=ExtResource("4_y5pr7")]
 
