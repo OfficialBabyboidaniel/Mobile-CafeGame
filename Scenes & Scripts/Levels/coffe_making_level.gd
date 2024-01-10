@@ -12,6 +12,6 @@ func _ready():
 func _unhandled_input(event):
 	if(event.is_action_pressed("Action") && coffe_is_done):
 		coffe_is_done = false
-		get_tree().change_scene_to_file("res://Scenes/Levels/main_level.tscn")
+		get_tree().change_scene_to_file("res://Scenes & Scripts/Levels/main_level.tscn")
 func coffe_done():
 	coffe_is_done = true
