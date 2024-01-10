@@ -12,9 +12,3 @@ MarginContainer
 NinePatchRect
 CharacterBody2D
 RigidBody2D
-VBoxContainer
-HBoxContainer
-GridContainer
-TextEdit
-HSlider
-Button

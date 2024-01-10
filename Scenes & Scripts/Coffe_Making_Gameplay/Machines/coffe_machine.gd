@@ -1,18 +1,21 @@
 extends Area2D
 
+
+
 var has_coffe_mug : bool = false
 var holding_object_at_rest_zone : bool = false
-var rest_zone
+var rest_zone #how to force this to be a rest zone class?
 var timer : Timer
 var coffe_filled : bool = false
-var coffemug
+var coffemug  #how to force this to be a coffe mug class? 
 
 signal coffe_is_done()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
 	has_coffe_mug = false
 	coffe_filled = false
+	holding_object_at_rest_zone = false
 	timer =  $Timer
 	rest_zone = $rest_zone
 #	coffemug = get_tree().get_class()
@@ -36,6 +39,7 @@ func _process(delta):
 			print("mug is of coffe mug")
 			has_coffe_mug = true
 
+#gå igenom
 func removeCoffeMug():
 	if has_coffe_mug:
 		print("timer stopped")

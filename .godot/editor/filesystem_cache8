@@ -1,8 +1,8 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1704837282
+::res://::1704880670
 export_presets.cfg::TextFile::-1::1701301127::0::1::::<><>::
 icon.svg::CompressedTexture2D::5879184978137751850::1700074051::1700074060::1::::<><>::
-test.tscn::PackedScene::3657970110585517751::1704836717::0::1::::<><>::uid://uxe1fxoxhllu::::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn<>uid://dhgfcksjk8krn::::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.tscn<>uid://kuf72fxyr0nq::::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.tscn
+test.tscn::PackedScene::3657970110585517751::1704837550::0::1::::<><>::uid://uxe1fxoxhllu::::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn<>uid://dhgfcksjk8krn::::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.tscn<>uid://kuf72fxyr0nq::::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.tscn
 ::res://android/::1704367570
 ::res://android/plugins/::1700596460
 ::res://Assets/::1704367570
@@ -17,50 +17,46 @@ Coffe_making_level.png::CompressedTexture2D::3109679538489255166::1703789078::17
 Main_level.png::CompressedTexture2D::6345882852952295118::1703789078::1703789078::1::::<><>::
 StartLevel.png::CompressedTexture2D::8831305054223689889::1703789078::1703789078::1::::<><>::
 ::res://Builds/::1704367571
-::res://Scenes & Scripts/::1704836687
-::res://Scenes & Scripts/AI/::1704837166
-AI.gd::GDScript::-1::1703795119::0::1::::<>CharacterBody2D<>::
-ai_customer.tscn::PackedScene::2249050159318226751::1704832101::0::1::::<><>::res://Scenes & Scripts/AI/AI.gd<>uid://webhf8368kkl::::res://Assets/Character/Vexa-Char.png
-CustomCollisionArea.tscn::PackedScene::8068788731630563798::1704837166::0::1::::<><>::
-::res://Scenes & Scripts/AI/Dialogue/::1704837106
-Dialog_Manager.gd::GDScript::-1::1704836917::0::1::::<>Node<>::
-Text_Box.gd::GDScript::-1::1700862474::0::1::::<>MarginContainer<>::
-Text_Box.tscn::PackedScene::3830912870359339442::1704836790::0::1::::<><>::res://Scenes & Scripts/AI/Dialogue/Text_Box.gd<>uid://dqp6u4e2k4abj::::res://Assets/Character/ChatBubble.png
-::res://Scenes & Scripts/Coffe_Making_Gameplay/::1704836717
-rest_zone.gd::GDScript::-1::1704789558::0::1::::<>Area2D<>::
-rest_zone.tscn::PackedScene::1451547158530987870::1704836687::0::1::::<><>::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.gd
-::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/::1704836717
-coffe_machine.gd::GDScript::-1::1704795762::0::1::::<>Area2D<>::
-coffe_machine.tscn::PackedScene::743538148762568662::1704836717::0::1::::<><>::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.gd<>uid://b0e7im8kxge8f::::res://TestAssets/test.tres<>uid://uxe1fxoxhllu::::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn<>uid://dmbn21mfsgxt3::::res://Assets/Coffe/Coffe machine.png
-::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/::1704837257
-base_mug.gd::GDScript::-1::1704796255::0::1::::<>Area2D<>::
-base_mug.tscn::PackedScene::6662312289974696501::1704836687::0::1::::<><>::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/base_mug.gd<>uid://d4ee62bxrspvk::::res://Scenes & Scripts/Components/sprite_component.tscn<>uid://xwor8nx210pm::::res://Scenes & Scripts/Components/collision_shape_component.tscn
-coffee_mug.gd::GDScript::-1::1704795762::0::1::::<>Area2D<>::
-coffee_mug.tscn::PackedScene::7663277933085102911::1704836687::0::1::::<><>::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.gd<>uid://d4ee62bxrspvk::::res://Scenes & Scripts/Components/sprite_component.tscn<>uid://xwor8nx210pm::::res://Scenes & Scripts/Components/collision_shape_component.tscn
-::res://Scenes & Scripts/Components/::1704832785
-collision_shape_component.tscn::PackedScene::1660641865094332942::1704795954::0::1::::<><>::
-sprite_component.tscn::PackedScene::9203295675924315344::1704795720::0::1::::<><>::uid://bupagn6r5x6b0::::res://Assets/Coffe/Coffe mug.png
-::res://Scenes & Scripts/Components/User-Input/::1704832785
-dragging_component.gd::GDScript::-1::1704796242::0::1::::<>Node2D<>::
-dragging_component.tscn::PackedScene::1818494159578387280::1704796217::0::1::::<><>::
-::res://Scenes & Scripts/Global/::1704837110
-Global_Singleton.gd::GDScript::-1::1704837037::0::1::::<>Node<>::
-::res://Scenes & Scripts/Levels/::1704837153
-coffe_making_level.gd::GDScript::-1::1704795762::0::1::::<>Node2D<>::
-coffe_making_level.tscn::PackedScene::7749986446562920438::1704837153::0::1::::<><>::res://Scenes & Scripts/Levels/coffe_making_level.gd<>uid://uxe1fxoxhllu::::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn<>uid://dhgfcksjk8krn::::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.tscn<>uid://kuf72fxyr0nq::::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.tscn
-main_level.gd::GDScript::-1::1704836917::0::1::::<>Node2D<>::
-main_level.tscn::PackedScene::8695058156209648246::1704832143::0::1::::<><>::res://Scenes & Scripts/Levels/main_level.gd<>uid://7bpr63gggfgp::::res://Scenes & Scripts/AI/ai_customer.tscn<>uid://cwn807smob1pa::::res://Assets/Levels/Main_level.png
-Start_Level.tscn::PackedScene::8458528634651430811::1704836766::0::1::::<><>::uid://by8ljrxw06xim::::res://Scenes & Scripts/UI/Start_Level/menu.tscn<>uid://dx27klnmnn5bp::::res://Assets/Levels/StartLevel.png
-::res://Scenes & Scripts/Miscallenous/::1704836542
-::res://Scenes & Scripts/UI/::1704837063
-Options_menu.gd::GDScript::-1::1703789079::0::1::::<>Control<>::
-Options_menu.tscn::PackedScene::8559440298988357434::1704837063::0::1::::<><>::res://Scenes & Scripts/UI/Options_menu.gd
-::res://Scenes & Scripts/UI/Start_Level/::1704836766
-Menu.gd::GDScript::-1::1704634711::0::1::::<>Control<>::
-menu.tscn::PackedScene::4139762285417113088::1704836766::0::1::::<><>::res://Scenes & Scripts/UI/Start_Level/Menu.gd
-::res://TestAssets/::1704832143
+::res://Scenes & Scripts/::1704837550
+::res://Scenes & Scripts/AI/::1704837550
+AI.gd::GDScript::-1::1704837550::0::1::::<>CharacterBody2D<>::
+ai_customer.tscn::PackedScene::2249050159318226751::1704837550::0::1::::<><>::res://Scenes & Scripts/AI/AI.gd<>uid://webhf8368kkl::::res://Assets/Character/Vexa-Char.png
+::res://Scenes & Scripts/AI/Dialogue/::1704837550
+Dialog_Manager.gd::GDScript::-1::1704837550::0::1::::<>Node<>::
+Text_Box.gd::GDScript::-1::1704837550::0::1::::<>MarginContainer<>::
+Text_Box.tscn::PackedScene::3830912870359339442::1704837550::0::1::::<><>::res://Scenes & Scripts/AI/Dialogue/Text_Box.gd<>uid://dqp6u4e2k4abj::::res://Assets/Character/ChatBubble.png
+::res://Scenes & Scripts/Coffe_Making_Gameplay/::1704880226
+rest_zone.gd::GDScript::-1::1704837550::0::1::::<>Area2D<>::
+rest_zone.tscn::PackedScene::1451547158530987870::1704880226::0::1::::<><>::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.gd
+::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/::1704880226
+coffe_machine.gd::GDScript::-1::1704837550::0::1::::<>Area2D<>::
+coffe_machine.tscn::PackedScene::743538148762568662::1704880226::0::1::::<><>::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.gd<>uid://b0e7im8kxge8f::::res://TestAssets/test.tres<>uid://uxe1fxoxhllu::::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn<>uid://dmbn21mfsgxt3::::res://Assets/Coffe/Coffe machine.png
+::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/::1704880647
+coffee_mug.gd::GDScript::-1::1704880647::0::1::::<>Node2D<>::
+coffee_mug.tscn::PackedScene::7663277933085102911::1704880225::0::1::::<><>::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.gd<>uid://d4ee62bxrspvk::::res://Scenes & Scripts/Components/sprite_component.tscn<>uid://xwor8nx210pm::::res://Scenes & Scripts/Components/collision_shape_component.tscn<>uid://055lldcf06ym::::res://Scenes & Scripts/Components/User-Input/dragging_component.tscn
+::res://Scenes & Scripts/Components/::1704880226
+collision_shape_component.tscn::PackedScene::1660641865094332942::1704880226::0::1::::<><>::
+sprite_component.tscn::PackedScene::9203295675924315344::1704837550::0::1::::<><>::uid://bupagn6r5x6b0::::res://Assets/Coffe/Coffe mug.png
+::res://Scenes & Scripts/Components/User-Input/::1704880647
+dragging_component.gd::GDScript::-1::1704880647::0::1::::<>Node2D<>::
+dragging_component.tscn::PackedScene::1818494159578387280::1704880647::0::1::::<><>::res://Scenes & Scripts/Components/User-Input/dragging_component.gd
+::res://Scenes & Scripts/Global/::1704837550
+Global_Singleton.gd::GDScript::-1::1704837550::0::1::::<>Node<>::
+::res://Scenes & Scripts/Levels/::1704880226
+coffe_making_level.gd::GDScript::-1::1704837550::0::1::::<>Node2D<>::
+coffe_making_level.tscn::PackedScene::7749986446562920438::1704880226::0::1::::<><>::res://Scenes & Scripts/Levels/coffe_making_level.gd<>uid://uxe1fxoxhllu::::res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn<>uid://dhgfcksjk8krn::::res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.tscn<>uid://kuf72fxyr0nq::::res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.tscn
+main_level.gd::GDScript::-1::1704837550::0::1::::<>Node2D<>::
+main_level.tscn::PackedScene::8695058156209648246::1704880226::0::1::::<><>::res://Scenes & Scripts/Levels/main_level.gd<>uid://7bpr63gggfgp::::res://Scenes & Scripts/AI/ai_customer.tscn<>uid://cwn807smob1pa::::res://Assets/Levels/Main_level.png
+Start_Level.tscn::PackedScene::8458528634651430811::1704880226::0::1::::<><>::uid://by8ljrxw06xim::::res://Scenes & Scripts/UI/Start_Level/menu.tscn<>uid://dx27klnmnn5bp::::res://Assets/Levels/StartLevel.png
+::res://Scenes & Scripts/UI/::1704880226
+Options_menu.gd::GDScript::-1::1704837550::0::1::::<>Control<>::
+Options_menu.tscn::PackedScene::8559440298988357434::1704880226::0::1::::<><>::res://Scenes & Scripts/UI/Options_menu.gd
+::res://Scenes & Scripts/UI/Start_Level/::1704880226
+Menu.gd::GDScript::-1::1704837550::0::1::::<>Control<>::
+menu.tscn::PackedScene::4139762285417113088::1704880226::0::1::::<><>::res://Scenes & Scripts/UI/Start_Level/Menu.gd
+::res://TestAssets/::1704880225
 new_atlas_texture.tres::AtlasTexture::7296912742520953260::1700684521::0::1::::<><>::uid://bok2053lmk70i
-test.tres::SpriteFrames::4151357197523994775::1704832143::0::1::::<><>::uid://db7xc7kxi8nei::::res://TestAssets/new_atlas_texture.tres<>uid://bok2053lmk70i::::res://TestAssets/sprites/characters/DialougeBOXES.png
+test.tres::SpriteFrames::4151357197523994775::1704880225::0::1::::<><>::uid://db7xc7kxi8nei::::res://TestAssets/new_atlas_texture.tres<>uid://bok2053lmk70i::::res://TestAssets/sprites/characters/DialougeBOXES.png
 ::res://TestAssets/sprites/::1704367572
 ::res://TestAssets/sprites/characters/::1704367572
 DialougeBOXES.png::CompressedTexture2D::3391393895289753674::1700684521::1700684521::1::::<><>::
