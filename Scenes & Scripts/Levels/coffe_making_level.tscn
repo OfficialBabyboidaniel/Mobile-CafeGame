@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://diofe6a7d7mxi"]
+[gd_scene load_steps=6 format=3 uid="uid://diofe6a7d7mxi"]
 
 [ext_resource type="Script" path="res://Scenes & Scripts/Levels/coffe_making_level.gd" id="1_uw0t4"]
 [ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn" id="2_6erho"]
-[ext_resource type="PackedScene" uid="uid://d4ee62bxrspvk" path="res://Scenes & Scripts/Components/sprite_component.tscn" id="2_bqrbc"]
 [ext_resource type="PackedScene" uid="uid://dhgfcksjk8krn" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.tscn" id="3_02n7t"]
 [ext_resource type="PackedScene" uid="uid://kuf72fxyr0nq" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.tscn" id="4_j25cv"]
 [ext_resource type="Texture2D" uid="uid://bkkl75vi8wapa" path="res://Assets/Levels/Coffe_making_level.png" id="5_ywwov"]
@@ -10,8 +9,7 @@
 [node name="coffe_making_level" type="Node2D"]
 script = ExtResource("1_uw0t4")
 
-[node name="SpriteComponent" parent="." instance=ExtResource("2_bqrbc")]
-z_index = -1
+[node name="Shelf_Background" type="Sprite2D" parent="."]
 position = Vector2(581.5, 300.5)
 scale = Vector2(0.441801, 0.382324)
 texture = ExtResource("5_ywwov")
