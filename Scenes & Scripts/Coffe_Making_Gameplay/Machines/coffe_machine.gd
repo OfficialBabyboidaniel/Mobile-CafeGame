@@ -1,21 +1,23 @@
 extends Area2D
 
+
+
 var has_coffe_mug : bool = false
 var holding_object_at_rest_zone : bool = false
-var rest_zone
+var rest_zone #how to force this to be a rest zone class?
 var timer : Timer
 var coffe_filled : bool = false
-var coffemug
+var coffemug  #how to force this to be a coffe mug class? 
 
 signal coffe_is_done()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
 	has_coffe_mug = false
 	coffe_filled = false
+	holding_object_at_rest_zone = false
 	timer =  $Timer
 	rest_zone = $rest_zone
-#	coffemug = get_tree().get_class()
 	rest_zone.object_entered_rest_zone.connect(should_add_coffe_mug)
 
 func should_add_coffe_mug(rest_zone, current_item):
@@ -32,10 +34,12 @@ func _process(delta):
 	if (holding_object_at_rest_zone == true and !Input.is_action_pressed("Action")):
 		print("dropped mug at rest zone, setting variables")
 		holding_object_at_rest_zone = false
-		if(coffemug.is_in_group("CoffeMug")): #måste lägga till att de inte går att röra muggen här
+		if(coffemug.is_in_group("CoffeMug")): 
 			print("mug is of coffe mug")
 			has_coffe_mug = true
+			coffemug.get_node("dragging_component").set_is_processing_enabled(false)
 
+#gå igenom
 func removeCoffeMug():
 	if has_coffe_mug:
 		print("timer stopped")
