@@ -1,6 +1,5 @@
+class_name coffe_machine
 extends Area2D
-
-
 
 var has_coffe_mug : bool = false
 var holding_object_at_rest_zone : bool = false

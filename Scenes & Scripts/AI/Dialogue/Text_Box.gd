@@ -5,18 +5,21 @@ extends MarginContainer
 @onready var label = $MarginContainer/Label
 @onready var timer = $LetterDisplayTimer
 
-const MAX_WIDTH = 256
+const MAX_WIDTH: int = 256
 
-var text = ""
-var letter_index = 0
+var text: String = ""
+var letter_index: int = 0
+
 #displaying text variables
-var letter_time = 0.05
-var space_time = 0.08
-var punctuation_time = 0.3
+@export var letter_time = 0.05
+@export var space_time = 0.08
+@export var punctuation_time = 0.3
 
 signal finished_displaying()
 
-func display_text(text_to_display: String):
+
+#code has to be reviewed, wtf is going on
+func display_text(text_to_display: String) -> void:
 	text = text_to_display
 	label.text = text_to_display
 	await  resized
@@ -32,7 +35,7 @@ func display_text(text_to_display: String):
 	label.text = ""
 	_display_letter()
 
-func _display_letter():
+func _display_letter() -> void:
 	if letter_index < text.length():
 		label.text += text[letter_index]
 		letter_index += 1
@@ -50,5 +53,5 @@ func _display_letter():
 			timer.start(letter_time)
 
 
-func _on_letter_display_timer_timeout():
+func _on_letter_display_timer_timeout() -> void :
 	_display_letter() # Replace with function body.

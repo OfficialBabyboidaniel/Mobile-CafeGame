@@ -1,12 +1,11 @@
+class_name rest_zone
 extends Area2D
 
-
-#are all these signals needed?
 var current_item
 signal object_entered_rest_zone(self_zone, item)
 signal object_left_rest_zone()
 
-@export var correct_bool = false
+var correct_bool = false
 
 #rest node entered + exited
 #emit signal and set current item, if Area2D node entered is of group movable objects
