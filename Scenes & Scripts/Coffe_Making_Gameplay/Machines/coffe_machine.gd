@@ -2,11 +2,12 @@ class_name coffe_machine
 extends Area2D
 
 var has_coffe_mug : bool = false
-var holding_object_at_rest_zone : bool = false
-var rest_zone #how to force this to be a rest zone class?
-var timer : Timer
 var coffe_filled : bool = false
-var coffemug  #how to force this to be a coffe mug class? 
+var holding_object_at_rest_zone : bool = false
+
+var timer : Timer
+var rest_zone: rest_zone #how to force this to be a rest zone class?
+var coffemug: coffe_mug  #how to force this to be a coffe mug class? 
 
 signal coffe_is_done()
 
@@ -19,6 +20,7 @@ func _ready():
 	rest_zone = $rest_zone
 	rest_zone.object_entered_rest_zone.connect(should_add_coffe_mug)
 
+#check if it should add coffe_mug when an item enters coffe_machine rest zone
 func should_add_coffe_mug(rest_zone, current_item):
 	print("coffe muggelse : ", current_item)
 	if(!is_instance_valid(current_item)):
@@ -38,7 +40,7 @@ func _process(delta):
 			has_coffe_mug = true
 			coffemug.get_node("dragging_component").set_is_processing_enabled(false)
 
-#gå igenom
+# gå igenom logic här, ska coffe mug sätter t false verkligen
 func removeCoffeMug():
 	if has_coffe_mug:
 		print("timer stopped")
@@ -51,7 +53,6 @@ func _on_input_event(_viewport, event, _shape_idx):
 		timer.start()
 		print(timer.time_left)
 		print("timer started")
-		
 
 func _on_timer_timeout():
 	timer.stop()

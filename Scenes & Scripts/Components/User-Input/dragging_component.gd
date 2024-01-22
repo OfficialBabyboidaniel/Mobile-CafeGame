@@ -5,7 +5,7 @@ var in_rest_zone = false
 var is_processing_enabled : bool = true
 
 #current rest point and available rest nodes
-var rest_point: rest_zone
+var rest_point
 var rest_nodes = []
 
 # Called when the node enters the scene tree for the first time.

@@ -7,7 +7,7 @@ extends MarginContainer
 
 const MAX_WIDTH: int = 256
 
-var text: String = ""
+var text = ""
 var letter_index: int = 0
 
 #displaying text variables
