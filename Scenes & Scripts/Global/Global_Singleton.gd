@@ -7,7 +7,8 @@ var spawn_timer: Timer
 
 func _ready():
 	DialogManager.order_completed.connect(start_timer_to_create_new_custom)
-	#Current_AI.customer_recieved_order.connect(start_timer_to_create_new_custom)
+	
+	#add currency to player when order done, will be reworked later, more accurate addition based on players accury of order
 
 
 func start_timer_to_create_new_custom():
@@ -20,5 +21,4 @@ func start_timer_to_create_new_custom():
 	spawn_timer.start()
 func spawn_customer():
 	get_tree().root.add_child(AI_customer.instantiate())
-	
 
