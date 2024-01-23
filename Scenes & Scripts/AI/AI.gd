@@ -9,18 +9,18 @@ const lines: Array[String] = [
 
 const thank_you_line: Array[String] = ["Thank you for the coffe"]
 
+signal customer_recieved_order() #is this used anywhere? 
 
-signal customer_recieved_order()
-
-# Called when the node enters the scene tree for the first time.
+#choose between which dialog should be said depending of coffe_order state
 func _ready():
 	if(GlobalSingleton.has_made_coffe):
 		DialogManager.start_dialog(global_position, thank_you_line)
 	else:
 		DialogManager.start_dialog(global_position, lines)
 	DialogManager.order_completed.connect(_killCustomer)
-	
 
+
+#delete customer after thank you message is read
 func _killCustomer():
 	
 	queue_free()

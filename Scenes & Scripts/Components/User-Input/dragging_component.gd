@@ -1,7 +1,6 @@
 extends Node2D
 
 var selected = false
-var inCoffeMachine = false #används inte
 var in_rest_zone = false
 var is_processing_enabled : bool = true
 
@@ -31,13 +30,13 @@ func _process(delta):
 			if in_rest_zone and rest_point != null : 
 				get_parent().global_position = lerp(get_parent().global_position, rest_point, 50 * delta)
 
-func item_entered_rest_zone(self_zone, item):
+func item_entered_rest_zone(self_zone, item) -> void:
 		print("entered rest zone: ", self_zone)
 		rest_point = self_zone.global_position
 		print("restpoint pos: ", rest_point)
 		in_rest_zone = true;
 
-func item_left_rest_zone():
+func item_left_rest_zone() -> void:
 		print("left rest zone")
 		rest_point = null
 		in_rest_zone = false;
@@ -45,8 +44,8 @@ func item_left_rest_zone():
 func _on_input_event(viewport, event, shape_idx):
 	selected = true;
 
-func set_selected(b_value):
+func set_selected(b_value) -> void:
 	selected = b_value
 
-func set_is_processing_enabled(b_value):
+func set_is_processing_enabled(b_value) -> void:
 	is_processing_enabled = b_value
