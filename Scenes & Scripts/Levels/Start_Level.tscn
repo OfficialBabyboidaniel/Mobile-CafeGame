@@ -6,13 +6,13 @@
 [node name="StartScene" type="Node2D"]
 
 [node name="Menu" parent="." instance=ExtResource("1_4fvfs")]
-z_index = 1
 offset_left = 554.4
 offset_top = 449.6
 offset_right = 554.4
 offset_bottom = 449.6
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
 position = Vector2(570.4, 337.6)
 scale = Vector2(0.45, 0.4)
 texture = ExtResource("2_dql82")
