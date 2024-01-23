@@ -1,6 +1,5 @@
 extends MarginContainer
 
-
 # Called when the node enters the scene tree for the first time.
 @onready var label = $MarginContainer/Label
 @onready var timer = $LetterDisplayTimer
@@ -16,7 +15,6 @@ var letter_index: int = 0
 @export var punctuation_time = 0.3
 
 signal finished_displaying()
-
 
 #code has to be reviewed, wtf is going on
 func display_text(text_to_display: String) -> void:
@@ -51,7 +49,6 @@ func _display_letter() -> void:
 			timer.start(space_time)
 		_:
 			timer.start(letter_time)
-
 
 func _on_letter_display_timer_timeout() -> void :
 	_display_letter() # Replace with function body.

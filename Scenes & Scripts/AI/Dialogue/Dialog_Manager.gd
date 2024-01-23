@@ -9,7 +9,7 @@ var dialog_lines: Array[String] = []
 var current_line_index = 0
 
 var text_box
-var text_box_position: Vector2 #= Vector2(105434,5)
+var text_box_position: Vector2 
 
 var is_dialog_active = false
 var can_advance_line = false
