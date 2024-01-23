@@ -8,9 +8,7 @@ var has_made_coffe : bool = false
 var spawn_timer: Timer
 
 func _ready():
-	DialogManager.order_completed.connect(start_timer_to_create_new_custom)
-	
-	#add currency to player when order done, will be reworked later, more accurate addition based on players accury of order
+	DialogManager.order_completed.connect(start_timer_to_create_new_customer)
 	
 
 #start timer to create a new customer
