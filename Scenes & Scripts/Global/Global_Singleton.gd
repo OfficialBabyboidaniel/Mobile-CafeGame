@@ -1,11 +1,18 @@
-class_name global_singleton
 extends Node
 
+#AI customer
 var AI_transform
-var has_made_coffe : bool = false
-
 @onready var AI_customer = preload("res://Scenes & Scripts/AI/ai_customer.tscn")
 var spawn_timer: Timer
+
+
+var has_made_coffe : bool = false
+
+#HUD values
+@export var money = 0
+@export var gems = 0
+@export var level = 1
+@export var expererience = 0
 
 func _ready():
 	DialogManager.order_completed.connect(start_timer_to_create_new_customer)
