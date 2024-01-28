@@ -33,9 +33,11 @@ size_flags_vertical = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 8
 
 [node name="Money" type="Label" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 0
 text = "money = "
 
 [node name="Gems" type="Label" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
