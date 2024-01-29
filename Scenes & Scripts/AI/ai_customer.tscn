@@ -16,3 +16,6 @@ texture = ExtResource("2_s0nq8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -752)
 shape = SubResource("RectangleShape2D_1aat6")
+
+[node name="TextBoxLocation" type="Node2D" parent="."]
+position = Vector2(208, -1018)
