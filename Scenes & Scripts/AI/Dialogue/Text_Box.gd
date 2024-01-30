@@ -1,10 +1,12 @@
+class_name TextBox
 extends MarginContainer
 
 # Called when the node enters the scene tree for the first time.
 @onready var label = $MarginContainer/Label
 @onready var timer = $LetterDisplayTimer
 
-const MAX_WIDTH: int = 256
+#correct max width number? 
+const MAX_WIDTH: int = 10000
 
 var text = ""
 var letter_index: int = 0
@@ -18,27 +20,37 @@ signal finished_displaying()
 
 #code has to be reviewed, wtf is going on
 func display_text(text_to_display: String) -> void:
+	print("trying to dispay text")
 	text = text_to_display
 	label.text = text_to_display
-	await  resized
-	custom_minimum_size.x = min(size.x, MAX_WIDTH)
-	
-	if size.x > MAX_WIDTH:
-		label.autowrap_mode = TextServer.AUTOWRAP_WORD
-		await resized #wait for x resize
-		await resized #wait for y resize
-		custom_minimum_size.y = size.y
-	global_position.x -= size.x / 2
-	global_position.y -= size.y + 24
+	if need_to_resize():  # Check if resizing is necessary
+		await resized
+		custom_minimum_size.x = min(size.x, MAX_WIDTH)
+		if size.x > MAX_WIDTH:
+				label.autowrap_mode = TextServer.AUTOWRAP_WORD
+				await resized  # wait for x resize
+				await resized  # wait for y resize
+				custom_minimum_size.y = size.y
+				global_position.x -= size.x / 2
+				global_position.y -= size.y + 24
+				label.text = ""
+				_display_letter()
 	label.text = ""
 	_display_letter()
 
+# Function to determine if resizing is necessary
+func need_to_resize() -> bool:
+	return size.x > MAX_WIDTH
+
 func _display_letter() -> void:
+	print("displaying letter fucntion")
 	if letter_index < text.length():
+		print("displaying a  letter")
 		label.text += text[letter_index]
 		letter_index += 1
 	
 	if letter_index >= text.length():
+		print("finished sentence")
 		finished_displaying.emit()
 		return
 	

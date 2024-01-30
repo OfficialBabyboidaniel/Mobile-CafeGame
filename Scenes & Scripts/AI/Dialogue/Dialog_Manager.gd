@@ -8,7 +8,7 @@ extends Node
 var dialog_lines: Array[String] = []
 var current_line_index = 0
 
-var text_box
+var text_box : TextBox
 var text_box_position: Vector2 
 
 var is_dialog_active = false
@@ -37,7 +37,10 @@ func _on_text_box_finished_displaying():
 	can_advance_line = true
 
 func _unhandled_input(event):
+	print("dialoge active? :" + str(is_dialog_active))
+	print("can advance line? :" + str(can_advance_line))
 	if(event.is_action_pressed("Action") && is_dialog_active && can_advance_line):
+		print("trying to advance convo")
 		text_box.queue_free()
 		current_line_index += 1
 		if(current_line_index >= dialog_lines.size() && !GlobalSingleton.has_made_coffe):

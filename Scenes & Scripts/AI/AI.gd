@@ -7,16 +7,18 @@ const lines: Array[String] = [
 	"Extra sugar",
 ]
 
+
 const thank_you_line: Array[String] = ["Thank you for the coffe"]
 
+@onready var text_box_location = $TextBoxLocation
 signal customer_recieved_order() #is this used anywhere? 
 
 #choose between which dialog should be said depending of coffe_order state
 func _ready():
 	if(GlobalSingleton.has_made_coffe):
-		DialogManager.start_dialog(global_position, thank_you_line)
+		DialogManager.start_dialog(text_box_location.global_position, thank_you_line)
 	else:
-		DialogManager.start_dialog(global_position, lines)
+		DialogManager.start_dialog(text_box_location.global_position, lines)
 	DialogManager.order_completed.connect(_killCustomer)
 
 
