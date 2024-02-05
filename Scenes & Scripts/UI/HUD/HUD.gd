@@ -33,3 +33,4 @@ func update_gems_label():
 	gems_label.text = "Gems: " + str(GlobalSingleton.gems)
 func update_level_label():
 	level_label.text = "level: " + str(GlobalSingleton.level)
+

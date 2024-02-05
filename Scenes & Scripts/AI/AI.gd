@@ -25,6 +25,7 @@ func _ready():
 #delete customer after thank you message is read
 func _killCustomer():
 	
+	SaveSystem.save_game()
 	queue_free()
 	
 

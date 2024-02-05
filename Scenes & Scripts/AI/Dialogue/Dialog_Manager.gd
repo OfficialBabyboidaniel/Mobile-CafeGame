@@ -37,16 +37,16 @@ func _on_text_box_finished_displaying():
 	can_advance_line = true
 
 func _unhandled_input(event):
-	print("dialoge active? :" + str(is_dialog_active))
-	print("can advance line? :" + str(can_advance_line))
+	# print("dialoge active? :" + str(is_dialog_active))
+	# print("can advance line? :" + str(can_advance_line))
 	if(event.is_action_pressed("Action") && is_dialog_active && can_advance_line):
-		print("trying to advance convo")
+		# print("trying to advance convo")
 		text_box.queue_free()
 		current_line_index += 1
 		if(current_line_index >= dialog_lines.size() && !GlobalSingleton.has_made_coffe):
 			conversation_finished.emit()
 			GlobalSingleton.has_made_coffe = true
-			print("consversation signal emittad")
+			# print("consversation signal emittad")
 			is_dialog_active = false
 			current_line_index = 0
 			return

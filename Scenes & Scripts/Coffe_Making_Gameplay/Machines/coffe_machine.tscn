@@ -27,7 +27,6 @@ position = Vector2(1, -70)
 scale = Vector2(28.2216, 20.6987)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("4_o0t5g")
