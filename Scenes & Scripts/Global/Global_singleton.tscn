@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bb2ifpbtr0u4u"]
-
-[ext_resource type="Script" path="res://Scenes & Scripts/Global/Global_Singleton.gd" id="1_eabu2"]
-
-[node name="Global_Singleton" type="Node2D" groups=["Persist"]]
-script = ExtResource("1_eabu2")

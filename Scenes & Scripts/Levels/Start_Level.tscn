@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsrmy32uv8syl"]
+[gd_scene load_steps=4 format=3 uid="uid://dsrmy32uv8syl"]
 
 [ext_resource type="PackedScene" uid="uid://by8ljrxw06xim" path="res://Scenes & Scripts/UI/Start_Level/menu.tscn" id="1_4fvfs"]
 [ext_resource type="Texture2D" uid="uid://dx27klnmnn5bp" path="res://Assets/Levels/StartLevel.png" id="2_dql82"]
+[ext_resource type="PackedScene" uid="uid://bb2ifpbtr0u4u" path="res://Scenes & Scripts/Save/Save_file.tscn" id="3_cgsje"]
 
 [node name="StartScene" type="Node2D"]
 
@@ -16,3 +17,6 @@ z_index = -1
 position = Vector2(570.4, 337.6)
 scale = Vector2(0.45, 0.4)
 texture = ExtResource("2_dql82")
+
+[node name="Save_file" parent="." instance=ExtResource("3_cgsje")]
+position = Vector2(554.4, 449.6)

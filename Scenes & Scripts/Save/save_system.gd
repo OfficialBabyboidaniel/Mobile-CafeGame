@@ -1,14 +1,17 @@
-extends Node2D
+extends Node
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print("loading game")
-	load_game() # Replace with function body.
+	load_game()  # Replace with function body.
+
 
 func save_game():
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.WRITE)
+	var save_game = FileAccess.open("user://savegame3.save", FileAccess.WRITE)
+	print(save_game)
 	var save_nodes = get_tree().get_nodes_in_group("Persist")
-	if(save_nodes.is_empty()):
+	if save_nodes.is_empty():
 		print("save_nodes is empty")
 		return
 	for node in save_nodes:
@@ -27,6 +30,7 @@ func save_game():
 		print("writing data to json string")
 		# JSON provides a static method to serialized JSON string.
 		var json_string = JSON.stringify(node_data)
+		print(json_string)
 
 		# Store the save dictionary as a new line in the save file.
 		save_game.store_line(json_string)
@@ -35,8 +39,9 @@ func save_game():
 # Note: This can be called from anywhere inside the tree. This function
 # is path independent.
 func load_game():
-	if not FileAccess.file_exists("user://savegame.save"):
-		return # Error! We don't have a save to load.
+	if not FileAccess.file_exists("user://savegame3.save"):
+		print("Error! We don't have a save to load.")
+		return  # Error! We don't have a save to load.
 
 	# We need to revert the game state so we're not cloning objects
 	# during loading. This will vary wildly depending on the needs of a
@@ -48,7 +53,7 @@ func load_game():
 
 	# Load the file line by line and process that dictionary to restore
 	# the object it represents.
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.READ)
+	var save_game = FileAccess.open("user://savegame3.save", FileAccess.READ)
 	while save_game.get_position() < save_game.get_length():
 		var json_string = save_game.get_line()
 
@@ -58,7 +63,14 @@ func load_game():
 		# Check if there is any error while parsing the JSON string, skip in case of failure
 		var parse_result = json.parse(json_string)
 		if not parse_result == OK:
-			print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
+			print(
+				"JSON Parse Error: ",
+				json.get_error_message(),
+				" in ",
+				json_string,
+				" at line ",
+				json.get_error_line()
+			)
 			continue
 
 		# Get the data from the JSON object
