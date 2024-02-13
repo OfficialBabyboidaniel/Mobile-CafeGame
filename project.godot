@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 DialogManager="*res://Scenes & Scripts/AI/Dialogue/Dialog_Manager.gd"
 GlobalSingleton="*res://Scenes & Scripts/Global/Global_Singleton.gd"
+SaveSystem="*res://Scenes & Scripts/Save/save_system.gd"
 
 [display]
 

@@ -43,14 +43,14 @@ func need_to_resize() -> bool:
 	return size.x > MAX_WIDTH
 
 func _display_letter() -> void:
-	print("displaying letter fucntion")
+	# print("displaying letter fucntion")
 	if letter_index < text.length():
-		print("displaying a  letter")
+		# print("displaying a  letter")
 		label.text += text[letter_index]
 		letter_index += 1
 	
 	if letter_index >= text.length():
-		print("finished sentence")
+		# print("finished sentence")
 		finished_displaying.emit()
 		return
 	
