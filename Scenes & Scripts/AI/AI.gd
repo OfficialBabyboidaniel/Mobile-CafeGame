@@ -7,15 +7,15 @@ const lines: Array[String] = [
 	"Extra sugar",
 ]
 
-
 const thank_you_line: Array[String] = ["Thank you for the coffe"]
 
 @onready var text_box_location = $TextBoxLocation
-signal customer_recieved_order() #is this used anywhere? 
+signal customer_recieved_order  #is this used anywhere?
+
 
 #choose between which dialog should be said depending of coffe_order state
 func _ready():
-	if(GlobalSingleton.has_made_coffe):
+	if GlobalSingleton.has_made_coffe:
 		DialogManager.start_dialog(text_box_location.global_position, thank_you_line)
 	else:
 		DialogManager.start_dialog(text_box_location.global_position, lines)
@@ -24,9 +24,4 @@ func _ready():
 
 #delete customer after thank you message is read
 func _killCustomer():
-	
-	SaveSystem.save_game()
 	queue_free()
-	
-
-
