@@ -5,11 +5,6 @@ var parent
 var pos_x
 var pos_y
 
-# var AI_transform_pos_x = 0
-# var AI_transform_pos_y = 0
-# var AI_transform_scale_x: float = 0
-# var AI_transform_scale_y: float = 0
-
 var has_made_coffe: bool = false
 
 #HUD values
@@ -46,9 +41,5 @@ func save():
 		"gems": GlobalSingleton.gems,
 		"level": GlobalSingleton.level,
 		"expererience": GlobalSingleton.expererience
-		# "AI_transform_pos_x": GlobalSingleton.AI_transform_pos_x,
-		# "AI_transform_pos_y": GlobalSingleton.AI_transform_pos_y,
-		# "AI_transform_scale_x": GlobalSingleton.AI_transform_scale_x,
-		# "AI_transform_scale_y": GlobalSingleton.AI_transform_scale_y
 	}
 	return save_dict
