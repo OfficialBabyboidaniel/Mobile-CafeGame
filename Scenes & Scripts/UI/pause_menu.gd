@@ -10,11 +10,13 @@ func _process(_delta):
 
 
 func resume():
+	$PanelContainer/VBoxContainer/Resume.set_mouse_filter(MOUSE_FILTER_IGNORE)
 	get_tree().paused = false
 	$AnimationPlayer.play_backwards("blur")
 
 
 func pause():
+	$PanelContainer/VBoxContainer/Resume.set_mouse_filter(MOUSE_FILTER_STOP)
 	get_tree().paused = true
 	$AnimationPlayer.play("blur")
 

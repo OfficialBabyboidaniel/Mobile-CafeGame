@@ -10,6 +10,11 @@
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_en2we")
 
+[node name="AI_Customer" parent="." instance=ExtResource("2_08f1o")]
+z_index = 1
+position = Vector2(590, 336)
+scale = Vector2(0.3, 0.3)
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(576, 320)
 scale = Vector2(0.438861, 0.337696)
@@ -17,14 +22,6 @@ texture = ExtResource("3_cca4f")
 
 [node name="Hud" parent="." instance=ExtResource("4_3smd7")]
 
-[node name="AI_Customer" parent="." instance=ExtResource("2_08f1o")]
-position = Vector2(590, 336)
-scale = Vector2(0.3, 0.3)
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("6_udrty")]
-size_flags_horizontal = 4
-size_flags_vertical = 4
+[node name="PauseMenu" parent="." instance=ExtResource("6_udrty")]
 
 [node name="Save_file" parent="." instance=ExtResource("5_dna3s")]
