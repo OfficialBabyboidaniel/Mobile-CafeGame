@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://by8ljrxw06xim"]
 
-[ext_resource type="Script" path="res://Scenes & Scripts/UI/Start_Level/Menu.gd" id="1_jj50q"]
+[ext_resource type="Script" path="res://Scenes & Scripts/UI/Start_Level/Start_Menu.gd" id="1_jj50q"]
 
-[node name="Menu" type="Control"]
+[node name="Start_Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
