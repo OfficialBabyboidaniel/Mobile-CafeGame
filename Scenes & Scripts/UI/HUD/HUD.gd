@@ -8,9 +8,9 @@ var level_label
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	money_label = $Control/MarginContainer/VBoxContainer/HBoxContainer/Money
-	gems_label = $Control/MarginContainer/VBoxContainer/HBoxContainer/Gems
-	level_label = $Control/MarginContainer/VBoxContainer/HBoxContainer/Level
+	money_label = $Control/MarginContainer/VBoxContainer2/HBoxContainer2/Money
+	gems_label = $Control/MarginContainer/VBoxContainer2/HBoxContainer2/Gems
+	level_label = $Control/MarginContainer/VBoxContainer1/HBoxContainer1/Level
 	update_money_label()
 	update_gems_label()
 	update_level_label()
@@ -40,3 +40,19 @@ func update_gems_label():
 
 func update_level_label():
 	level_label.text = "level: " + str(GlobalSingleton.level)
+
+
+func _on_money_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_gems_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_settings_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_achievements_pressed() -> void:
+	pass # Replace with function body.
