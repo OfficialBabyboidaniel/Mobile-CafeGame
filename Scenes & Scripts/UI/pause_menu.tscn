@@ -11,7 +11,7 @@ shader_parameter/lod = 0.0
 length = 0.001
 tracks/0/type = "bezier"
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/path = NodePath(".:material:shader_parameter/lod")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -22,8 +22,8 @@ tracks/0/keys = {
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../PanelContainer:modulate:r")
+tracks/1/enabled = false
+tracks/1/path = NodePath("../SettingsContainer:modulate:r")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -33,8 +33,8 @@ tracks/1/keys = {
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../PanelContainer:modulate:g")
+tracks/2/enabled = false
+tracks/2/path = NodePath("../SettingsContainer:modulate:g")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -44,8 +44,8 @@ tracks/2/keys = {
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../PanelContainer:modulate:b")
+tracks/3/enabled = false
+tracks/3/path = NodePath("../SettingsContainer:modulate:b")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -55,8 +55,8 @@ tracks/3/keys = {
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../PanelContainer:modulate:a")
+tracks/4/enabled = false
+tracks/4/path = NodePath("../SettingsContainer:modulate:a")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -70,7 +70,7 @@ resource_name = "blur"
 length = 0.3
 tracks/0/type = "bezier"
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/path = NodePath(".:material:shader_parameter/lod")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -81,8 +81,8 @@ tracks/0/keys = {
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../PanelContainer:modulate:r")
+tracks/1/enabled = false
+tracks/1/path = NodePath("../SettingsContainer:modulate:r")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -92,8 +92,8 @@ tracks/1/keys = {
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../PanelContainer:modulate:g")
+tracks/2/enabled = false
+tracks/2/path = NodePath("../SettingsContainer:modulate:g")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -103,8 +103,8 @@ tracks/2/keys = {
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../PanelContainer:modulate:b")
+tracks/3/enabled = false
+tracks/3/path = NodePath("../SettingsContainer:modulate:b")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -114,8 +114,8 @@ tracks/3/keys = {
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../PanelContainer:modulate:a")
+tracks/4/enabled = false
+tracks/4/path = NodePath("../SettingsContainer:modulate:a")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -130,10 +130,12 @@ _data = {
 "blur": SubResource("Animation_ax5en")
 }
 
-[node name="PauseMenu" type="CanvasLayer"]
+[node name="PauseMenuCanvas" type="CanvasLayer" groups=["pause_menu"]]
 
 [node name="PauseMenu" type="Control" parent="."]
+unique_name_in_owner = true
 process_mode = 3
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -149,40 +151,132 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 192.0
-offset_top = 5.0
-offset_right = 192.0
-offset_bottom = 5.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="PanelContainer" type="PanelContainer" parent="PauseMenu"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -172.0
-offset_top = -148.0
-offset_right = 188.0
-offset_bottom = 148.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/PanelContainer"]
+[node name="Nav_Bar" type="HBoxContainer" parent="PauseMenu"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 116.0
+offset_right = 890.0
+offset_bottom = 156.0
+theme_override_constants/separation = 20
+
+[node name="Settings" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Settings"
+
+[node name="Shop" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Shop
+"
+
+[node name="Achievements" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Ahievements"
+
+[node name="Legal" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Legal
+"
+
+[node name="SettingsContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/SettingsContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 mouse_filter = 2
 
-[node name="Resume" type="Button" parent="PauseMenu/PanelContainer/VBoxContainer"]
+[node name="Resume" type="Button" parent="PauseMenu/SettingsContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 mouse_filter = 2
 text = "Resume	"
+
+[node name="ShopContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/ShopContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Shop" type="Button" parent="PauseMenu/ShopContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+text = "Shop
+"
+
+[node name="AchievementsContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/AchievementsContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Achivements" type="Button" parent="PauseMenu/AchievementsContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+text = "Achivements	"
+
+[node name="LegalContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/LegalContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Legal" type="Button" parent="PauseMenu/LegalContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+text = "Legal
+"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PauseMenu"]
 root_node = NodePath("../ColorRect")
@@ -190,4 +284,11 @@ libraries = {
 "": SubResource("AnimationLibrary_v00ab")
 }
 
-[connection signal="pressed" from="PauseMenu/PanelContainer/VBoxContainer/Resume" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Settings" to="PauseMenu" method="_on_settings_pressed"]
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Shop" to="PauseMenu" method="_on_shop_pressed"]
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Achievements" to="PauseMenu" method="_on_achievements_pressed"]
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Legal" to="PauseMenu" method="_on_legal_pressed"]
+[connection signal="pressed" from="PauseMenu/SettingsContainer/VBoxContainer/Resume" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/ShopContainer/VBoxContainer/Shop" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/AchievementsContainer/VBoxContainer/Achivements" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/LegalContainer/VBoxContainer/Legal" to="PauseMenu" method="_on_resume_pressed"]

@@ -27,26 +27,55 @@ theme_override_constants/margin_top = 32
 theme_override_constants/margin_right = 32
 theme_override_constants/margin_bottom = 32
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
-layout_mode = 2
-size_flags_vertical = 0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-
-[node name="Money" type="Label" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="VBoxContainer1" type="VBoxContainer" parent="Control/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
-text = "money = "
+size_flags_vertical = 0
+mouse_filter = 2
 
-[node name="Gems" type="Label" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="HBoxContainer1" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer1"]
 layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 2
+theme_override_constants/separation = 20
 
-[node name="Level" type="Label" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Level" type="Label" parent="Control/MarginContainer/VBoxContainer1/HBoxContainer1"]
+clip_contents = true
 layout_mode = 2
+text = "Level = 0"
 
-[node name="HSlider" type="HSlider" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
-visible = false
+[node name="Achievements" type="Button" parent="Control/MarginContainer/VBoxContainer1/HBoxContainer1"]
 layout_mode = 2
-size_flags_vertical = 1
+text = "Achievements
+"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+mouse_filter = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 2
+theme_override_constants/separation = 30
+
+[node name="Money" type="Button" parent="Control/MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Money = 0"
+
+[node name="Gems" type="Button" parent="Control/MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Gems = 0
+"
+
+[node name="Settings" type="Button" parent="Control/MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Settings
+"
+
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer1/HBoxContainer1/Achievements" to="." method="_on_achievements_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer2/HBoxContainer2/Money" to="." method="_on_money_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer2/HBoxContainer2/Gems" to="." method="_on_gems_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer2/HBoxContainer2/Settings" to="." method="_on_settings_pressed"]
