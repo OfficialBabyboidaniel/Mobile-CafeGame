@@ -43,16 +43,35 @@ func update_level_label():
 
 
 func _on_money_pressed() -> void:
-	pass # Replace with function body.
+	open_pause_menu(find_pause_node())
 
 
 func _on_gems_pressed() -> void:
-	pass # Replace with function body.
+	open_pause_menu(find_pause_node())
 
 
 func _on_settings_pressed() -> void:
-	pass # Replace with function body.
+	open_pause_menu(find_pause_node())
 
 
 func _on_achievements_pressed() -> void:
-	pass # Replace with function body.
+	open_pause_menu(find_pause_node())
+
+
+func open_pause_menu(pause_menu_child) -> void:
+	# Validate pause menu child node
+	if is_instance_valid(pause_menu_child):
+		# Call a function inside it
+		pause_menu_child.pause()
+		# Replace "some_function" with the actual function name
+	else:
+		print("Pause menu child node not found!")
+
+
+func find_pause_node():
+	var tree = get_tree()
+	print(tree)
+	# Find pause menu node
+	var pause_menu_instance = tree.get_first_node_in_group("pause_menu")
+	var pause_menu_child = pause_menu_instance.get_node("PauseMenu")
+	return pause_menu_child

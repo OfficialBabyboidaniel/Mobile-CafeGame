@@ -22,6 +22,6 @@ texture = ExtResource("3_cca4f")
 
 [node name="Hud" parent="." instance=ExtResource("4_3smd7")]
 
-[node name="PauseMenu" parent="." instance=ExtResource("6_udrty")]
+[node name="PauseMenuCanvas" parent="." instance=ExtResource("6_udrty")]
 
 [node name="Save_file" parent="." instance=ExtResource("5_dna3s")]
