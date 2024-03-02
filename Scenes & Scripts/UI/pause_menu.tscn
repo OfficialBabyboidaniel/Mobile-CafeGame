@@ -142,7 +142,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 script = ExtResource("1_wwqrl")
 
 [node name="ColorRect" type="ColorRect" parent="PauseMenu"]
@@ -201,7 +200,6 @@ mouse_filter = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-mouse_filter = 2
 text = "Resume	"
 
 [node name="ShopContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
@@ -225,7 +223,6 @@ mouse_filter = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-mouse_filter = 2
 text = "Shop
 "
 
@@ -250,7 +247,6 @@ mouse_filter = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-mouse_filter = 2
 text = "Achivements	"
 
 [node name="LegalContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
@@ -274,7 +270,6 @@ mouse_filter = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-mouse_filter = 2
 text = "Legal
 "
 
