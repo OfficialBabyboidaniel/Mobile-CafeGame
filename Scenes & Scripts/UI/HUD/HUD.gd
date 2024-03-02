@@ -1,9 +1,15 @@
 class_name HUD
 extends CanvasLayer
 
+#labels for HUD
 var money_label
 var gems_label
 var level_label
+
+#switch values for sub-menus
+var SETTINGS_MENU = 1
+var SHOP_MENU = 2
+var ACHIVEMENTS_MENU = 3
 
 
 # Called when the node enters the scene tree for the first time.
@@ -42,28 +48,37 @@ func update_level_label():
 	level_label.text = "level: " + str(GlobalSingleton.level)
 
 
-func _on_money_pressed() -> void:
-	open_pause_menu(find_pause_node())
-
-
-func _on_gems_pressed() -> void:
-	open_pause_menu(find_pause_node())
-
-
 func _on_settings_pressed() -> void:
-	open_pause_menu(find_pause_node())
+	open_pause_menu(find_pause_node(), SETTINGS_MENU)
+
+
+func _on_money_pressed() -> void:
+	open_pause_menu(find_pause_node(), SHOP_MENU)
 
 
 func _on_achievements_pressed() -> void:
-	open_pause_menu(find_pause_node())
+	open_pause_menu(find_pause_node(), ACHIVEMENTS_MENU)
 
 
-func open_pause_menu(pause_menu_child) -> void:
+func _on_gems_pressed() -> void:
+	open_pause_menu(find_pause_node(), SHOP_MENU)
+
+
+func open_pause_menu(pause_menu_child, menu) -> void:
 	# Validate pause menu child node
 	if is_instance_valid(pause_menu_child):
-		# Call a function inside it
+		#pause game and hide all menus
+		pause_menu_child.hide_all_menus()
 		pause_menu_child.pause()
-		# Replace "some_function" with the actual function name
+
+		match menu:
+			1:
+				pause_menu_child._on_settings_pressed()
+			2:
+				pause_menu_child._on_shop_pressed()
+			3:
+				pause_menu_child._on_achievements_pressed()
+
 	else:
 		print("Pause menu child node not found!")
 
