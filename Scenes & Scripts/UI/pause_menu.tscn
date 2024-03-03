@@ -196,6 +196,35 @@ layout_mode = 2
 size_flags_vertical = 4
 mouse_filter = 2
 
+[node name="GridContainer" type="GridContainer" parent="PauseMenu/SettingsContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="MusicLabel" type="Label" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="SFXLabel" type="Label" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "SFX"
+
+[node name="SFXSlider" type="HSlider" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 1.0
+
 [node name="Resume" type="Button" parent="PauseMenu/SettingsContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -283,6 +312,8 @@ libraries = {
 [connection signal="pressed" from="PauseMenu/Nav_Bar/Shop" to="PauseMenu" method="_on_shop_pressed"]
 [connection signal="pressed" from="PauseMenu/Nav_Bar/Achievements" to="PauseMenu" method="_on_achievements_pressed"]
 [connection signal="pressed" from="PauseMenu/Nav_Bar/Legal" to="PauseMenu" method="_on_legal_pressed"]
+[connection signal="value_changed" from="PauseMenu/SettingsContainer/VBoxContainer/GridContainer/MusicSlider" to="PauseMenu" method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="PauseMenu/SettingsContainer/VBoxContainer/GridContainer/SFXSlider" to="PauseMenu" method="_on_sfx_slider_value_changed"]
 [connection signal="pressed" from="PauseMenu/SettingsContainer/VBoxContainer/Resume" to="PauseMenu" method="_on_resume_pressed"]
 [connection signal="pressed" from="PauseMenu/ShopContainer/VBoxContainer/Shop" to="PauseMenu" method="_on_resume_pressed"]
 [connection signal="pressed" from="PauseMenu/AchievementsContainer/VBoxContainer/Achivements" to="PauseMenu" method="_on_resume_pressed"]
