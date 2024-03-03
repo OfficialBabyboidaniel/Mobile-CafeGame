@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://by8ljrxw06xim"]
+[gd_scene load_steps=3 format=3 uid="uid://by8ljrxw06xim"]
 
 [ext_resource type="Script" path="res://Scenes & Scripts/UI/Start_Level/Start_Menu.gd" id="1_jj50q"]
+[ext_resource type="AudioStream" uid="uid://dylabalex4ves" path="res://Assets/Audio/SFX/menu_button_click.wav" id="2_mlure"]
 
 [node name="Start_Menu" type="Control"]
 layout_mode = 3
@@ -36,6 +37,10 @@ text = "Options"
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
 scale = Vector2(9.3478, 5.17974)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_mlure")
+bus = &"SFX"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
