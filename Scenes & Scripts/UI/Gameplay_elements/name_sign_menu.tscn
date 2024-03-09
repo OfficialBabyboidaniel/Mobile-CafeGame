@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://djyheny14nygc"]
+[gd_scene load_steps=9 format=3 uid="uid://djyheny14nygc"]
 
 [ext_resource type="Script" path="res://Scenes & Scripts/UI/Menu/pause_menu.gd" id="1_3gwag"]
 [ext_resource type="Shader" path="res://Materials/Shaders/blur.gdshader" id="2_8o22x"]
 [ext_resource type="PackedScene" uid="uid://bu0plxpkfpa61" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/draw_component.tscn" id="3_ephib"]
+[ext_resource type="PackedScene" uid="uid://d7akk700dmdm" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/erase_component.tscn" id="4_5dwpy"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hl18s"]
 shader = ExtResource("2_8o22x")
@@ -184,12 +185,17 @@ text = "redo"
 
 [node name="name_sign_area" type="PanelContainer" parent="name_signing_control/margin_container/vertical_container/name_signing_container"]
 unique_name_in_owner = true
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-mouse_filter = 2
 
-[node name="DrawComponent" parent="name_signing_control/margin_container/vertical_container/name_signing_container/name_sign_area" instance=ExtResource("3_ephib")]
+[node name="draw_component" parent="name_signing_control/margin_container/vertical_container/name_signing_container/name_sign_area" groups=["drawing_tools"] instance=ExtResource("3_ephib")]
+unique_name_in_owner = true
+position = Vector2(-24, -20)
+
+[node name="erase_component" parent="name_signing_control/margin_container/vertical_container/name_signing_container/name_sign_area" groups=["drawing_tools"] instance=ExtResource("4_5dwpy")]
+unique_name_in_owner = true
 position = Vector2(-24, -20)
 
 [node name="right_UI_buttons" type="VBoxContainer" parent="name_signing_control/margin_container/vertical_container/name_signing_container"]
@@ -216,3 +222,6 @@ root_node = NodePath("../ColorRect")
 libraries = {
 "": SubResource("AnimationLibrary_v00ab")
 }
+
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Pen" to="name_signing_control" method="_on_pen_pressed"]
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Erase" to="name_signing_control" method="_on_erase_pressed"]
