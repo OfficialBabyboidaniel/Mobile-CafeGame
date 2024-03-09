@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://webhf8368kkl"
-path="res://.godot/imported/Vexa-Char.png-6f388cd0cdac6cd49301902101497850.ctex"
+path="res://.godot/imported/vexa_char.png-59ca96d79d4dee4af13de87a64e1f432.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Vexa-Char.png"
-dest_files=["res://.godot/imported/Vexa-Char.png-6f388cd0cdac6cd49301902101497850.ctex"]
+source_file="res://Assets/Character/vexa_char.png"
+dest_files=["res://.godot/imported/vexa_char.png-59ca96d79d4dee4af13de87a64e1f432.ctex"]
 
 [params]
 

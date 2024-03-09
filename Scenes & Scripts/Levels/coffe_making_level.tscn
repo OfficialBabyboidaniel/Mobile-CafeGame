@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://diofe6a7d7mxi"]
 
 [ext_resource type="Script" path="res://Scenes & Scripts/Levels/coffe_making_level.gd" id="1_uw0t4"]
-[ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn" id="2_6erho"]
-[ext_resource type="PackedScene" uid="uid://dhgfcksjk8krn" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.tscn" id="3_02n7t"]
-[ext_resource type="PackedScene" uid="uid://kuf72fxyr0nq" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.tscn" id="4_j25cv"]
+[ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes & Scripts/Coffe_making_gameplay/rest_zone.tscn" id="2_6erho"]
+[ext_resource type="PackedScene" uid="uid://dhgfcksjk8krn" path="res://Scenes & Scripts/Coffe_making_gameplay/Mugs/coffee_mug.tscn" id="3_02n7t"]
+[ext_resource type="PackedScene" uid="uid://kuf72fxyr0nq" path="res://Scenes & Scripts/Coffe_making_gameplay/Machines/coffe_machine.tscn" id="4_j25cv"]
 [ext_resource type="Texture2D" uid="uid://bkkl75vi8wapa" path="res://Assets/Levels/Coffe_making_level.png" id="5_ywwov"]
-[ext_resource type="PackedScene" uid="uid://djyheny14nygc" path="res://Scenes & Scripts/UI/pause_menu.tscn" id="7_avhey"]
-[ext_resource type="PackedScene" uid="uid://bef1pcpljj0hr" path="res://Scenes & Scripts/UI/HUD/HUD.tscn" id="7_wqhu7"]
+[ext_resource type="PackedScene" uid="uid://djyheny14nygc" path="res://Scenes & Scripts/UI/Gameplay_elements/name_sign_menu.tscn" id="7_avhey"]
+[ext_resource type="PackedScene" uid="uid://bef1pcpljj0hr" path="res://Scenes & Scripts/UI/Hud/hud.tscn" id="7_wqhu7"]
 
 [node name="coffe_making_level" type="Node2D"]
 script = ExtResource("1_uw0t4")
