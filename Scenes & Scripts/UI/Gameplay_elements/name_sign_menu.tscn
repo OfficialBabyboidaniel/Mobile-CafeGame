@@ -194,7 +194,7 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 position = Vector2(-24, -20)
 
-[node name="erase_component" parent="name_signing_control/margin_container/vertical_container/name_signing_container/name_sign_area" groups=["drawing_tools"] instance=ExtResource("4_5dwpy")]
+[node name="erase_component" parent="name_signing_control/margin_container/vertical_container/name_signing_container/name_sign_area" instance=ExtResource("4_5dwpy")]
 unique_name_in_owner = true
 position = Vector2(-24, -20)
 
