@@ -23,6 +23,10 @@ func _input(event):
 		line = Line2D.new()
 		add_child(line)
 		line.add_point(mouse_pos_relative)  # Use relative position
+
+		#add line to commands list
+		%name_signing_control.start_line(self, line)
+
 	elif (
 		(event is InputEventScreenTouch and not event.pressed)
 		or (event is InputEventMouseButton and not event.pressed)

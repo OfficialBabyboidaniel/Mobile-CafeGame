@@ -209,6 +209,11 @@ text = "Pen"
 layout_mode = 2
 text = "Erasor"
 
+[node name="Clear" type="Button" parent="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons"]
+layout_mode = 2
+text = "Clear
+"
+
 [node name="Bottom_UI_buttons" type="HBoxContainer" parent="name_signing_control/margin_container/vertical_container"]
 layout_mode = 2
 
@@ -223,5 +228,8 @@ libraries = {
 "": SubResource("AnimationLibrary_v00ab")
 }
 
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/left_UI_buttons/undo" to="name_signing_control" method="_on_undo_pressed"]
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/left_UI_buttons/redo" to="name_signing_control" method="_on_redo_pressed"]
 [connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Pen" to="name_signing_control" method="_on_pen_pressed"]
 [connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Erase" to="name_signing_control" method="_on_erase_pressed"]
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Clear" to="name_signing_control" method="_on_clear_pressed"]
