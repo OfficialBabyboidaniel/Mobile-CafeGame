@@ -24,8 +24,8 @@ func _input(event):
 		add_child(line)
 		line.add_point(mouse_pos_relative)  # Use relative position
 
-		#add line to commands list
-		%name_signing_control.start_line(self, line)
+		#add line to commands list, not used in simple version
+		#%name_signing_control.start_line(self, line)
 
 	elif (
 		(event is InputEventScreenTouch and not event.pressed)
