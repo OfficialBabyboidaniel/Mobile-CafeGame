@@ -65,10 +65,10 @@ func _on_redo_pressed() -> void:
 func redraw_scene():
 	# Clear the scene
 	for child in %draw_component.get_children():
-		lines.append(child)
+		#lines.append(child)
 		child.set_visible(false)
 	for child in %erase_component.get_children():
-		lines.append(child)
+		#lines.append(child)
 		child.set_visible(false)
 
 	# Redraw each command, does not work
