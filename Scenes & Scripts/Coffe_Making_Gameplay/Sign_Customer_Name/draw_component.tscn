@@ -1,8 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bu0plxpkfpa61"]
 
-[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Sign_Customer_Name/draw_component.gd" id="1_3rv7q"]
+[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/draw_component.gd" id="1_3rv7q"]
 
-[node name="DrawComponent" type="Node2D"]
+[node name="draw_component" type="Node2D"]
 script = ExtResource("1_3rv7q")
-
-[connection signal="draw" from="." to="." method="_on_draw"]

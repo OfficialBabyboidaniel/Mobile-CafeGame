@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://by8ljrxw06xim"]
 
-[ext_resource type="Script" path="res://Scenes & Scripts/UI/Start_Level/Start_Menu.gd" id="1_jj50q"]
+[ext_resource type="Script" path="res://Scenes & Scripts/UI/Start_level/start_menu.gd" id="1_jj50q"]
 [ext_resource type="AudioStream" uid="uid://dylabalex4ves" path="res://Assets/Audio/SFX/menu_button_click.wav" id="2_mlure"]
 
 [node name="Start_Menu" type="Control"]

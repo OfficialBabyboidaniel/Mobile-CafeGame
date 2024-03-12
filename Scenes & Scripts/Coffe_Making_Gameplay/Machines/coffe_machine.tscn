@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://kuf72fxyr0nq"]
 
-[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Machines/coffe_machine.gd" id="1_7qnwf"]
+[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_making_gameplay/Machines/coffe_machine.gd" id="1_7qnwf"]
 [ext_resource type="SpriteFrames" uid="uid://b0e7im8kxge8f" path="res://TestAssets/test.tres" id="2_i0l3b"]
-[ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.tscn" id="3_wx0ab"]
+[ext_resource type="PackedScene" uid="uid://uxe1fxoxhllu" path="res://Scenes & Scripts/Coffe_making_gameplay/rest_zone.tscn" id="3_wx0ab"]
 [ext_resource type="Texture2D" uid="uid://dmbn21mfsgxt3" path="res://Assets/Coffe/Coffe machine.png" id="4_o0t5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pcloc"]

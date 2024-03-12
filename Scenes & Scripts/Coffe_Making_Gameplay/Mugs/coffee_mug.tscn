@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dhgfcksjk8krn"]
 
-[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_Making_Gameplay/Mugs/coffee_mug.gd" id="1_a03yh"]
+[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_making_gameplay/Mugs/coffee_mug.gd" id="1_a03yh"]
 [ext_resource type="Texture2D" uid="uid://bupagn6r5x6b0" path="res://Assets/Coffe/Coffe mug.png" id="3_4kty2"]
-[ext_resource type="PackedScene" uid="uid://055lldcf06ym" path="res://Scenes & Scripts/Components/User-Input/dragging_component.tscn" id="4_y5pr7"]
+[ext_resource type="PackedScene" uid="uid://055lldcf06ym" path="res://Scenes & Scripts/Components/User_input/dragging_component.tscn" id="4_y5pr7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6qvad"]
 size = Vector2(289, 430)

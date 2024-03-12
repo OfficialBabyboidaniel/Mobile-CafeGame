@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://7bpr63gggfgp"]
 
 [ext_resource type="Script" path="res://Scenes & Scripts/AI/AI.gd" id="1_edehf"]
-[ext_resource type="Texture2D" uid="uid://webhf8368kkl" path="res://Assets/Character/Vexa-Char.png" id="2_s0nq8"]
+[ext_resource type="Texture2D" uid="uid://webhf8368kkl" path="res://Assets/Character/vexa_char.png" id="2_s0nq8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1aat6"]
 size = Vector2(64, 112)

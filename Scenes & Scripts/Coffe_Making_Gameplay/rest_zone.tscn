@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://uxe1fxoxhllu"]
 
-[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_Making_Gameplay/rest_zone.gd" id="1_dy5a1"]
+[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_making_gameplay/rest_zone.gd" id="1_dy5a1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s40vw"]
 

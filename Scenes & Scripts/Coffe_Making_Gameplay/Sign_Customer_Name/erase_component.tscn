@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d7akk700dmdm"]
+
+[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/erase_component.gd" id="1_6d4jy"]
+
+[node name="erase_component" type="Node2D" groups=["drawing_tools"]]
+script = ExtResource("1_6d4jy")

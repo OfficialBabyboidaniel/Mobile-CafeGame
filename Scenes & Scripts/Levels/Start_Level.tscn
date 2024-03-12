@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dsrmy32uv8syl"]
 
-[ext_resource type="PackedScene" uid="uid://by8ljrxw06xim" path="res://Scenes & Scripts/UI/Start_Level/Start_Menu.tscn" id="1_4fvfs"]
+[ext_resource type="PackedScene" uid="uid://by8ljrxw06xim" path="res://Scenes & Scripts/UI/Start_level/start_menu.tscn" id="1_4fvfs"]
 [ext_resource type="Texture2D" uid="uid://dx27klnmnn5bp" path="res://Assets/Levels/StartLevel.png" id="2_dql82"]
-[ext_resource type="PackedScene" uid="uid://bb2ifpbtr0u4u" path="res://Scenes & Scripts/Save/Save_file.tscn" id="3_cgsje"]
+[ext_resource type="PackedScene" uid="uid://bb2ifpbtr0u4u" path="res://Scenes & Scripts/Save/save_file.tscn" id="3_cgsje"]
 [ext_resource type="AudioStream" uid="uid://bc10ol2uahgc5" path="res://Assets/Audio/Music/menu_music.mp3" id="4_aumsr"]
 
 [node name="StartScene" type="Node2D"]

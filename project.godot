@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Mobile-cafe Game"
-run/main_scene="res://Scenes & Scripts/Levels/Start_Level.tscn"
+run/main_scene="res://Scenes & Scripts/Levels/start_level.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-DialogManager="*res://Scenes & Scripts/AI/Dialogue/Dialog_Manager.gd"
-GlobalSingleton="*res://Scenes & Scripts/Global/Global_Singleton.gd"
+DialogManager="*res://Scenes & Scripts/AI/Dialogue/dialog_manager.gd"
+GlobalSingleton="*res://Scenes & Scripts/Global/global_singleton.gd"
 SaveSystem="*res://Scenes & Scripts/Save/save_system.gd"
 
 [display]

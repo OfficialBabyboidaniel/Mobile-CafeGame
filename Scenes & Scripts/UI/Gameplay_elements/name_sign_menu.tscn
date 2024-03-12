@@ -1,0 +1,235 @@
+[gd_scene load_steps=9 format=3 uid="uid://djyheny14nygc"]
+
+[ext_resource type="Script" path="res://Scenes & Scripts/UI/Gameplay_elements/name_sign_menu.gd" id="1_3gwag"]
+[ext_resource type="Shader" path="res://Materials/Shaders/blur.gdshader" id="2_8o22x"]
+[ext_resource type="PackedScene" uid="uid://bu0plxpkfpa61" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/draw_component.tscn" id="3_ephib"]
+[ext_resource type="PackedScene" uid="uid://d7akk700dmdm" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/erase_component.tscn" id="4_5dwpy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hl18s"]
+shader = ExtResource("2_8o22x")
+shader_parameter/lod = 0.0
+
+[sub_resource type="Animation" id="Animation_886yo"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_ax5en"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.853, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("../margin_container/vertical_container/name_signing_container/name_sign_area:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v00ab"]
+_data = {
+"RESET": SubResource("Animation_886yo"),
+"blur": SubResource("Animation_ax5en")
+}
+
+[node name="name_sign_canvas" type="CanvasLayer"]
+
+[node name="name_signing_control" type="Control" parent="."]
+unique_name_in_owner = true
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3gwag")
+
+[node name="ColorRect" type="ColorRect" parent="name_signing_control"]
+material = SubResource("ShaderMaterial_hl18s")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="margin_container" type="MarginContainer" parent="name_signing_control"]
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 150
+theme_override_constants/margin_bottom = 100
+
+[node name="vertical_container" type="VBoxContainer" parent="name_signing_control/margin_container"]
+layout_mode = 2
+
+[node name="name_signing_container" type="GridContainer" parent="name_signing_control/margin_container/vertical_container"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 3
+
+[node name="left_UI_buttons" type="VBoxContainer" parent="name_signing_control/margin_container/vertical_container/name_signing_container"]
+layout_mode = 2
+
+[node name="undo" type="Button" parent="name_signing_control/margin_container/vertical_container/name_signing_container/left_UI_buttons"]
+layout_mode = 2
+text = "undo"
+
+[node name="redo" type="Button" parent="name_signing_control/margin_container/vertical_container/name_signing_container/left_UI_buttons"]
+layout_mode = 2
+text = "redo"
+
+[node name="name_sign_area" type="PanelContainer" parent="name_signing_control/margin_container/vertical_container/name_signing_container"]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="draw_component" parent="name_signing_control/margin_container/vertical_container/name_signing_container/name_sign_area" groups=["drawing_tools"] instance=ExtResource("3_ephib")]
+unique_name_in_owner = true
+position = Vector2(-24, -20)
+
+[node name="erase_component" parent="name_signing_control/margin_container/vertical_container/name_signing_container/name_sign_area" instance=ExtResource("4_5dwpy")]
+unique_name_in_owner = true
+position = Vector2(-24, -20)
+
+[node name="right_UI_buttons" type="VBoxContainer" parent="name_signing_control/margin_container/vertical_container/name_signing_container"]
+layout_mode = 2
+
+[node name="Pen" type="Button" parent="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons"]
+layout_mode = 2
+text = "Pen"
+
+[node name="Erase" type="Button" parent="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons"]
+layout_mode = 2
+text = "Erasor"
+
+[node name="Clear" type="Button" parent="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons"]
+layout_mode = 2
+text = "Clear
+"
+
+[node name="Bottom_UI_buttons" type="HBoxContainer" parent="name_signing_control/margin_container/vertical_container"]
+layout_mode = 2
+
+[node name="finish" type="Button" parent="name_signing_control/margin_container/vertical_container/Bottom_UI_buttons"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Finish"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="name_signing_control"]
+root_node = NodePath("../ColorRect")
+libraries = {
+"": SubResource("AnimationLibrary_v00ab")
+}
+
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/left_UI_buttons/undo" to="name_signing_control" method="_on_undo_pressed"]
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/left_UI_buttons/redo" to="name_signing_control" method="_on_redo_pressed"]
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Pen" to="name_signing_control" method="_on_pen_pressed"]
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Erase" to="name_signing_control" method="_on_erase_pressed"]
+[connection signal="pressed" from="name_signing_control/margin_container/vertical_container/name_signing_container/right_UI_buttons/Clear" to="name_signing_control" method="_on_clear_pressed"]
