@@ -8,8 +8,8 @@ func _ready() -> void:
 
 
 func save_game():
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.WRITE)
-	print(save_game)
+	var save_file = FileAccess.open("user://savegame.save", FileAccess.WRITE)
+	print(save_file)
 	var save_nodes = get_tree().get_nodes_in_group("Persist")
 	if save_nodes.is_empty():
 		print("save_nodes is empty")
@@ -33,7 +33,7 @@ func save_game():
 		print("Json Stringify" + json_string)
 
 		# Store the save dictionary as a new line in the save file.
-		save_game.store_line(json_string)
+		save_file.store_line(json_string)
 
 
 # Note: This can be called from anywhere inside the tree. This function
@@ -66,14 +66,14 @@ func _process(_delta):
 		# All nodes have been queued for deletion, proceed with the rest of the code
 		load_and_process_save_data()
 		set_process(false)
-		
+
 
 func load_and_process_save_data():
 	# Load the file line by line and process that dictionary to restore
 	# the object it represents.
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.READ)
-	while save_game.get_position() < save_game.get_length():
-		var json_string = save_game.get_line()
+	var save_file = FileAccess.open("user://savegame.save", FileAccess.READ)
+	while save_file.get_position() < save_file.get_length():
+		var json_string = save_file.get_line()
 
 		# Creates the helper class to interact with JSON
 		var json = JSON.new()
