@@ -3,7 +3,7 @@ extends Node
 #g� igenom och skriva kommentar vad som h�nder
 
 # Called when the node enters the scene tree for the first time.
-@onready var text_box_scene = preload("res://Scenes & Scripts/AI/Dialogue/Text_Box.tscn")
+@onready var text_box_scene = preload("res://Scenes & Scripts/AI/Dialogue/text_box.tscn")
 
 var dialog_lines: Array[String] = []
 var current_line_index = 0
