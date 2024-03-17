@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://d4msmnfecsvnw"]
 
-[ext_resource type="Script" path="res://Scenes & Scripts/UI/Gameplay_elements/prototyping/name_sign_menu_advanced.gd" id="1_4jx8w"]
+[ext_resource type="Script" path="res://Scenes & Scripts/UI/Gameplay_elements/Prototyping/name_sign_menu_advanced.gd" id="1_4jx8w"]
 [ext_resource type="Shader" path="res://Materials/Shaders/blur.gdshader" id="2_h82xf"]
-[ext_resource type="PackedScene" uid="uid://bu0plxpkfpa61" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/draw_component.tscn" id="3_bapve"]
-[ext_resource type="PackedScene" uid="uid://d7akk700dmdm" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/erase_component.tscn" id="4_0faxc"]
+[ext_resource type="PackedScene" uid="uid://bu0plxpkfpa61" path="res://Scenes & Scripts/Coffe_making_gameplay/Sign_customer_name/draw_component.tscn" id="3_bapve"]
+[ext_resource type="PackedScene" uid="uid://d7akk700dmdm" path="res://Scenes & Scripts/Coffe_making_gameplay/Sign_customer_name/erase_component.tscn" id="4_0faxc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hl18s"]
 shader = ExtResource("2_h82xf")
