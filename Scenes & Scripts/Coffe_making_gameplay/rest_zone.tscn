@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://uxe1fxoxhllu"]
+
+[ext_resource type="Script" path="res://Scenes & Scripts/Coffe_making_gameplay/rest_zone.gd" id="1_dy5a1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s40vw"]
+
+[node name="rest_zone" type="Area2D" groups=["zone"]]
+position = Vector2(0, -2)
+script = ExtResource("1_dy5a1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s40vw")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

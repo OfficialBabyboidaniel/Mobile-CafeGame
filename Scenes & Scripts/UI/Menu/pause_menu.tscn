@@ -1,0 +1,320 @@
+[gd_scene load_steps=7 format=3 uid="uid://djyheny14nygc"]
+
+[ext_resource type="Shader" path="res://Materials/Shaders/blur.gdshader" id="1_jjekj"]
+[ext_resource type="Script" path="res://Scenes & Scripts/UI/Menu/pause_menu.gd" id="1_wwqrl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hl18s"]
+shader = ExtResource("1_jjekj")
+shader_parameter/lod = 0.0
+
+[sub_resource type="Animation" id="Animation_886yo"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("../SettingsContainer:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("../SettingsContainer:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("../SettingsContainer:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("../SettingsContainer:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_ax5en"]
+resource_name = "blur"
+length = 0.3
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.853, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("../SettingsContainer:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("../SettingsContainer:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("../SettingsContainer:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("../SettingsContainer:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v00ab"]
+_data = {
+"RESET": SubResource("Animation_886yo"),
+"blur": SubResource("Animation_ax5en")
+}
+
+[node name="PauseMenuCanvas" type="CanvasLayer" groups=["pause_menu"]]
+
+[node name="PauseMenu" type="Control" parent="."]
+unique_name_in_owner = true
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wwqrl")
+
+[node name="ColorRect" type="ColorRect" parent="PauseMenu"]
+material = SubResource("ShaderMaterial_hl18s")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Nav_Bar" type="HBoxContainer" parent="PauseMenu"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 116.0
+offset_right = 890.0
+offset_bottom = 156.0
+theme_override_constants/separation = 20
+
+[node name="Settings" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Settings"
+
+[node name="Shop" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Shop
+"
+
+[node name="Achievements" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Ahievements"
+
+[node name="Legal" type="Button" parent="PauseMenu/Nav_Bar"]
+layout_mode = 2
+text = "Legal
+"
+
+[node name="SettingsContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/SettingsContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="GridContainer" type="GridContainer" parent="PauseMenu/SettingsContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="MusicLabel" type="Label" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="SFXLabel" type="Label" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "SFX"
+
+[node name="SFXSlider" type="HSlider" parent="PauseMenu/SettingsContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Resume" type="Button" parent="PauseMenu/SettingsContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Resume	"
+
+[node name="ShopContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/ShopContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Shop" type="Button" parent="PauseMenu/ShopContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Shop
+"
+
+[node name="AchievementsContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/AchievementsContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Achivements" type="Button" parent="PauseMenu/AchievementsContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Achivements	"
+
+[node name="LegalContainer" type="PanelContainer" parent="PauseMenu" groups=["menus"]]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+offset_left = 222.0
+offset_top = 146.0
+offset_right = 901.0
+offset_bottom = 529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/LegalContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Legal" type="Button" parent="PauseMenu/LegalContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Legal
+"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PauseMenu"]
+root_node = NodePath("../ColorRect")
+libraries = {
+"": SubResource("AnimationLibrary_v00ab")
+}
+
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Settings" to="PauseMenu" method="_on_settings_pressed"]
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Shop" to="PauseMenu" method="_on_shop_pressed"]
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Achievements" to="PauseMenu" method="_on_achievements_pressed"]
+[connection signal="pressed" from="PauseMenu/Nav_Bar/Legal" to="PauseMenu" method="_on_legal_pressed"]
+[connection signal="value_changed" from="PauseMenu/SettingsContainer/VBoxContainer/GridContainer/MusicSlider" to="PauseMenu" method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="PauseMenu/SettingsContainer/VBoxContainer/GridContainer/SFXSlider" to="PauseMenu" method="_on_sfx_slider_value_changed"]
+[connection signal="pressed" from="PauseMenu/SettingsContainer/VBoxContainer/Resume" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/ShopContainer/VBoxContainer/Shop" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/AchievementsContainer/VBoxContainer/Achivements" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/LegalContainer/VBoxContainer/Legal" to="PauseMenu" method="_on_resume_pressed"]
