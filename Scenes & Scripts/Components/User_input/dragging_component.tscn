@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://055lldcf06ym"]
-
-[ext_resource type="Script" path="res://Scenes & Scripts/Components/User_input/dragging_component.gd" id="1_bi668"]
-
-[node name="dragging_component" type="Area2D"]
-script = ExtResource("1_bi668")
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]
