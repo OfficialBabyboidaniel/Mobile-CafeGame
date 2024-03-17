@@ -75,7 +75,47 @@ layout_mode = 2
 text = "Settings
 "
 
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="Recipes" type="Button" parent="Control/MarginContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Recipes
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer"]
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="RecipeContainer" type="PanelContainer" parent="Control/MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/MarginContainer/RecipeContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "recipe container"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/MarginContainer/RecipeContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Back" type="Button" parent="Control/MarginContainer/MarginContainer/RecipeContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Back"
+
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer1/HBoxContainer1/Achievements" to="." method="_on_achievements_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer2/HBoxContainer2/Money" to="." method="_on_money_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer2/HBoxContainer2/Gems" to="." method="_on_gems_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer2/HBoxContainer2/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer3/Recipes" to="." method="_on_recipes_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/MarginContainer/RecipeContainer/HBoxContainer/Back" to="." method="_on_back_pressed"]

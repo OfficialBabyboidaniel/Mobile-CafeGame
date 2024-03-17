@@ -90,3 +90,14 @@ func find_pause_node():
 	var pause_menu_instance = tree.get_first_node_in_group("pause_menu")
 	var pause_menu_child = pause_menu_instance.get_node("PauseMenu")
 	return pause_menu_child
+
+
+func _on_recipes_pressed() -> void:
+	if !$Control/MarginContainer/MarginContainer.is_visible():
+		$Control/MarginContainer/MarginContainer.set_visible(true)
+	else:
+		$Control/MarginContainer/MarginContainer.set_visible(false)
+
+
+func _on_back_pressed() -> void:
+	$Control/MarginContainer/MarginContainer.set_visible(false)
