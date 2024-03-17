@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes & Scripts/UI/Gameplay_elements/name_sign_menu.gd" id="1_3gwag"]
 [ext_resource type="Shader" path="res://Materials/Shaders/blur.gdshader" id="2_8o22x"]
-[ext_resource type="PackedScene" uid="uid://bu0plxpkfpa61" path="res://Scenes & Scripts/Coffe_making_gameplay/sign_customer_name/draw_component.tscn" id="3_ephib"]
+[ext_resource type="PackedScene" uid="uid://bu0plxpkfpa61" path="res://Scenes & Scripts/Coffe_making_gameplay/Sign_customer_name/draw_component.tscn" id="3_ephib"]
 [ext_resource type="Script" path="res://Scenes & Scripts/UI/Gameplay_elements/name_to_sign.gd" id="3_wdxxr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hl18s"]

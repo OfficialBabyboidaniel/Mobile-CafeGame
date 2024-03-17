@@ -1,2 +1,2 @@
-class_name coffe_mug
 extends Node2D
+class_name coffe_mug

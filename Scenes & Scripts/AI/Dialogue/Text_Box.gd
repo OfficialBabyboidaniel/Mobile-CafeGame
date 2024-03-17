@@ -1,5 +1,5 @@
-class_name TextBox
 extends MarginContainer
+class_name TextBox
 
 # Called when the node enters the scene tree for the first time.
 @onready var label = $MarginContainer/Label

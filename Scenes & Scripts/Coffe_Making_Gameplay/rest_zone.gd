@@ -1,5 +1,5 @@
-class_name rest_zone
 extends Area2D
+class_name rest_zone
 
 var current_item
 signal object_entered_rest_zone(self_zone, item)

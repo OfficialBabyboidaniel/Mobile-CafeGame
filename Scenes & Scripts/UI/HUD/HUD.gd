@@ -1,5 +1,5 @@
-class_name HUD
 extends CanvasLayer
+class_name HUD
 
 #labels for HUD
 var money_label
