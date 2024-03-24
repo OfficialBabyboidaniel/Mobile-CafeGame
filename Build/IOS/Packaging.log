@@ -1,0 +1,178 @@
+2024-03-24 09:43:13 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x10c7d08d0; archive(resolved)="<IDEArchive: 0x600003a8de00>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team(resolved)="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x10c7d08d0; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionProcessingPipelineContext: 0x10c7cdac0; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7ce3f0; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7bba60; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7bd800; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7c8830; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7ba410; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7c2630; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7c2af0; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="<IDEProvisioningBasicTeam: 0x600001f6ed80; teamID='94UB52G2HK', teamName='(null)'>">
+	<IDEDistributionContext: 0x10c7c28c0; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="(null)">
+	<IDEDistributionContext: 0x10c7c97f0; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="(null)">
+	<IDEDistributionContext: 0x10c7c20e0; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="(null)">
+	<IDEDistributionContext: 0x12ff3ab60; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x600001c44c60>", team="(null)">
+	<IDEDistributionContext: 0x10c7b5310; archive = "<IDEArchive: 0x600003a8de00>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x10c7d08d0>
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2024-03-24 09:43:13 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app' '/var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root/Payload/Mobile-cafe Game.app'
+2024-03-24 09:43:13 +0000  >>> Copying /Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app 
+2024-03-24 09:43:13 +0000  copying file ./_CodeSignature/CodeResources ... 
+2024-03-24 09:43:13 +0000  6126 bytes for ./_CodeSignature/CodeResources
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-1100-Portrait-2436h@3x.png ... 
+2024-03-24 09:43:13 +0000  71185 bytes for ./LaunchImage-1100-Portrait-2436h@3x.png
+2024-03-24 09:43:13 +0000  copying file ./en.lproj/InfoPlist.strings ... 
+2024-03-24 09:43:13 +0000  42 bytes for ./en.lproj/InfoPlist.strings
+2024-03-24 09:43:13 +0000  copying file ./Mobile-cafe Game ... 
+2024-03-24 09:43:13 +0000  58690848 bytes for ./Mobile-cafe Game
+2024-03-24 09:43:13 +0000  copying file ./AppIcon60x60@2x.png ... 
+8994 bytes for ./AppIcon60x60@2x.png
+copying file ./LaunchImage-1100-Landscape-2436h@3x.png ... 
+108440 bytes for ./LaunchImage-1100-Landscape-2436h@3x.png
+copying file ./LaunchImage-800-667h@2x.png ... 
+2024-03-24 09:43:13 +0000  33052 bytes for ./LaunchImage-800-667h@2x.png
+2024-03-24 09:43:13 +0000  copying file ./Mobile-cafe Game.pck ... 
+2024-03-24 09:43:13 +0000  5760384 bytes for ./Mobile-cafe Game.pck
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-700-Portrait~ipad.png ... 
+33936 bytes for ./LaunchImage-700-Portrait~ipad.png
+copying file ./Assets.car ... 
+2024-03-24 09:43:13 +0000  414248 bytes for ./Assets.car
+2024-03-24 09:43:13 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2024-03-24 09:43:13 +0000  13123 bytes for ./AppIcon76x76@2x~ipad.png
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-800-Portrait-736h@3x.png ... 
+2024-03-24 09:43:13 +0000  81050 bytes for ./LaunchImage-800-Portrait-736h@3x.png
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-700@2x.png ... 
+2024-03-24 09:43:13 +0000  25343 bytes for ./LaunchImage-700@2x.png
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-700-568h@2x.png ... 
+2024-03-24 09:43:13 +0000  26112 bytes for ./LaunchImage-700-568h@2x.png
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-700-Landscape@2x~ipad.png ... 
+2024-03-24 09:43:13 +0000  179186 bytes for ./LaunchImage-700-Landscape@2x~ipad.png
+2024-03-24 09:43:13 +0000  copying file ./embedded.mobileprovision ... 
+2024-03-24 09:43:13 +0000  12326 bytes for ./embedded.mobileprovision
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-800-Landscape-736h@3x.png ... 
+2024-03-24 09:43:13 +0000  126112 bytes for ./LaunchImage-800-Landscape-736h@3x.png
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-700-Portrait@2x~ipad.png ... 
+2024-03-24 09:43:13 +0000  112178 bytes for ./LaunchImage-700-Portrait@2x~ipad.png
+2024-03-24 09:43:13 +0000  copying file ./LaunchImage-700-Landscape~ipad.png ... 
+2024-03-24 09:43:13 +0000  51362 bytes for ./LaunchImage-700-Landscape~ipad.png
+2024-03-24 09:43:13 +0000  copying file ./Info.plist ... 
+2024-03-24 09:43:13 +0000  2117 bytes for ./Info.plist
+2024-03-24 09:43:13 +0000  copying file ./PkgInfo ... 
+2024-03-24 09:43:13 +0000  8 bytes for ./PkgInfo
+2024-03-24 09:43:13 +0000 [MT] /usr/bin/ditto exited with 0
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
+2024-03-24 09:43:13 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2024-03-24 09:43:13 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionCompileBitcodeStep
+2024-03-24 09:43:13 +0000 [MT] Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionCodeSlimmingStep
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionCopyBCSymbolMapsStep
+2024-03-24 09:43:13 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2024-03-24 09:43:13 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2024-03-24 09:43:13 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionArchThinningStep
+2024-03-24 09:43:13 +0000 [MT] Item /Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2024-03-24 09:43:13 +0000 [MT] Archs to thin for item /Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app are ["arm64e"]
+2024-03-24 09:43:13 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root/Payload/Mobile-cafe Game.app/Mobile-cafe Game' '-verify_arch' 'arm64e'
+2024-03-24 09:43:13 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2024-03-24 09:43:13 +0000 [MT] Skipping architecture thinning for item "Mobile-cafe Game" because arch "arm64e" wasn't found
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionODRStep
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2024-03-24 09:43:13 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2024-03-24 09:43:13 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2024-03-24 09:43:13 +0000 [MT] Entitlements for <IDEDistributionItem: 0x600003a81d40; bundleID='com.spider.2002', path='<DVTFilePath:0x600002f1c460:'/Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600003e148c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600002b4cd80; name='Apple Development: danielspider2002@gmail.com (N3PFSP6S3X)', hash='B4F185F7F8EBAB4A5E88FA19FB59ECA1023EC691', serialNumber='62A43A95CA2CE488CFFD77999191E041', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-03-13 19:11:55 +0000''>', entitlements='{
+    "application-identifier" = "94UB52G2HK.com.spider.2002";
+    "com.apple.developer.team-identifier" = 94UB52G2HK;
+    "get-task-allow" = 1;
+}', teamID='94UB52G2HK', identifier='com.spider.2002', executablePath='<DVTFilePath:0x600002c318c0:'/Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app/Mobile-cafe Game'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "94UB52G2HK.com.spider.2002";
+    "com.apple.developer.team-identifier" = 94UB52G2HK;
+    "get-task-allow" = 1;
+}
+2024-03-24 09:43:13 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2024-03-24 09:43:13 +0000 [MT] Entitlements for <IDEDistributionItem: 0x600003a81d40; bundleID='com.spider.2002', path='<DVTFilePath:0x600002f1c460:'/Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600003e148c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600002b4cfc0; name='Apple Development: danielspider2002@gmail.com (N3PFSP6S3X)', hash='B4F185F7F8EBAB4A5E88FA19FB59ECA1023EC691', serialNumber='62A43A95CA2CE488CFFD77999191E041', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-03-13 19:11:55 +0000''>', entitlements='{
+    "application-identifier" = "94UB52G2HK.com.spider.2002";
+    "com.apple.developer.team-identifier" = 94UB52G2HK;
+    "get-task-allow" = 1;
+}', teamID='94UB52G2HK', identifier='com.spider.2002', executablePath='<DVTFilePath:0x600002c318c0:'/Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app/Mobile-cafe Game'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "94UB52G2HK.com.spider.2002";
+    "com.apple.developer.team-identifier" = 94UB52G2HK;
+    "get-task-allow" = 1;
+}
+2024-03-24 09:43:13 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x600003a81d40; bundleID='com.spider.2002', path='<DVTFilePath:0x600002f1c460:'/Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600003e148c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600002b4d380; name='Apple Development: danielspider2002@gmail.com (N3PFSP6S3X)', hash='B4F185F7F8EBAB4A5E88FA19FB59ECA1023EC691', serialNumber='62A43A95CA2CE488CFFD77999191E041', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-03-13 19:11:55 +0000''>', entitlements='{
+    "application-identifier" = "94UB52G2HK.com.spider.2002";
+    "com.apple.developer.team-identifier" = 94UB52G2HK;
+    "get-task-allow" = 1;
+}', teamID='94UB52G2HK', identifier='com.spider.2002', executablePath='<DVTFilePath:0x600002c318c0:'/Users/Daniel/Mobile-CafeGame/Build/IOS/Mobile-cafe Game.xcarchive/Products/Applications/Mobile-cafe Game.app/Mobile-cafe Game'>', hardenedRuntime='0'>'> to: /var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/entitlements~~~A6IK2C
+2024-03-24 09:43:13 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'B4F185F7F8EBAB4A5E88FA19FB59ECA1023EC691' '--entitlements' '/var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/entitlements~~~A6IK2C' '--generate-entitlement-der' '--strip-disallowed-xattrs' '--preserve-metadata=identifier,flags,runtime' '/var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root/Payload/Mobile-cafe Game.app'
+2024-03-24 09:43:13 +0000  /var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root/Payload/Mobile-cafe Game.app: replacing existing signature
+2024-03-24 09:43:17 +0000  /var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root/Payload/Mobile-cafe Game.app: signed app bundle with Mach-O thin (arm64) [com.spider.2002]
+2024-03-24 09:43:17 +0000 [MT] /usr/bin/codesign exited with 0
+2024-03-24 09:43:17 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
+2024-03-24 09:43:17 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2024-03-24 09:43:17 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2024-03-24 09:43:17 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root' '/var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Packages/Mobile-cafe Game.ipa'
+2024-03-24 09:43:17 +0000  >>> Copying /var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root 
+2024-03-24 09:43:17 +0000  copying file ./Payload/Mobile-cafe Game.app/_CodeSignature/CodeResources ... 
+2024-03-24 09:43:17 +0000  6126 bytes for ./Payload/Mobile-cafe Game.app/_CodeSignature/CodeResources
+2024-03-24 09:43:17 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-1100-Portrait-2436h@3x.png ... 
+2024-03-24 09:43:17 +0000  71185 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-1100-Portrait-2436h@3x.png
+2024-03-24 09:43:17 +0000  copying file ./Payload/Mobile-cafe Game.app/en.lproj/InfoPlist.strings ... 
+2024-03-24 09:43:17 +0000  42 bytes for ./Payload/Mobile-cafe Game.app/en.lproj/InfoPlist.strings
+copying file ./Payload/Mobile-cafe Game.app/Mobile-cafe Game ... 
+2024-03-24 09:43:18 +0000  58690848 bytes for ./Payload/Mobile-cafe Game.app/Mobile-cafe Game
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/AppIcon60x60@2x.png ... 
+2024-03-24 09:43:18 +0000  8994 bytes for ./Payload/Mobile-cafe Game.app/AppIcon60x60@2x.png
+copying file ./Payload/Mobile-cafe Game.app/LaunchImage-1100-Landscape-2436h@3x.png ... 
+2024-03-24 09:43:18 +0000  108440 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-1100-Landscape-2436h@3x.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-800-667h@2x.png ... 
+2024-03-24 09:43:18 +0000  33052 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-800-667h@2x.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/Mobile-cafe Game.pck ... 
+2024-03-24 09:43:18 +0000  5760384 bytes for ./Payload/Mobile-cafe Game.app/Mobile-cafe Game.pck
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-700-Portrait~ipad.png ... 
+2024-03-24 09:43:18 +0000  33936 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-700-Portrait~ipad.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/Assets.car ... 
+2024-03-24 09:43:18 +0000  414248 bytes for ./Payload/Mobile-cafe Game.app/Assets.car
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/AppIcon76x76@2x~ipad.png ... 
+2024-03-24 09:43:18 +0000  13123 bytes for ./Payload/Mobile-cafe Game.app/AppIcon76x76@2x~ipad.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-800-Portrait-736h@3x.png ... 
+2024-03-24 09:43:18 +0000  81050 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-800-Portrait-736h@3x.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-700@2x.png ... 
+2024-03-24 09:43:18 +0000  25343 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-700@2x.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-700-568h@2x.png ... 
+2024-03-24 09:43:18 +0000  26112 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-700-568h@2x.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-700-Landscape@2x~ipad.png ... 
+2024-03-24 09:43:18 +0000  179186 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-700-Landscape@2x~ipad.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/embedded.mobileprovision ... 
+2024-03-24 09:43:18 +0000  12326 bytes for ./Payload/Mobile-cafe Game.app/embedded.mobileprovision
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-800-Landscape-736h@3x.png ... 
+2024-03-24 09:43:18 +0000  126112 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-800-Landscape-736h@3x.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-700-Portrait@2x~ipad.png ... 
+2024-03-24 09:43:18 +0000  112178 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-700-Portrait@2x~ipad.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/LaunchImage-700-Landscape~ipad.png ... 
+2024-03-24 09:43:18 +0000  51362 bytes for ./Payload/Mobile-cafe Game.app/LaunchImage-700-Landscape~ipad.png
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/Info.plist ... 
+2024-03-24 09:43:18 +0000  2117 bytes for ./Payload/Mobile-cafe Game.app/Info.plist
+2024-03-24 09:43:18 +0000  copying file ./Payload/Mobile-cafe Game.app/PkgInfo ... 
+8 bytes for ./Payload/Mobile-cafe Game.app/PkgInfo
+2024-03-24 09:43:18 +0000 [MT] /usr/bin/ditto exited with 0
+2024-03-24 09:43:18 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
+2024-03-24 09:43:18 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2024-03-24 09:43:18 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
+2024-03-24 09:43:18 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x600002f28280:'/var/folders/cp/j6k93r3d1qj6h4jn2cgz1b480000gp/T/XcodeDistPipeline.~~~8d0u3L/Root/Payload/Mobile-cafe Game.app'>
+2024-03-24 09:43:18 +0000 [MT] Processing step: IDEDistributionCreateManifestStep

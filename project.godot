@@ -24,6 +24,7 @@ SaveSystem="*res://Scenes & Scripts/Save/save_system.gd"
 [display]
 
 window/stretch/mode="viewport"
+window/handheld/orientation=4
 
 [input]
 

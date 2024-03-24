@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/Daniel/Library/Developer/Xcode/DerivedData/Mobile-cafe_Game-dflztkmkqnwufxhcaunbkdkokilk/Build/Intermediates.noindex/ArchiveIntermediates/Mobile-cafe Game/InstallationBuildProductsLocation/Applications/Mobile-cafe Game.app/Mobile-cafe Game'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z28godot_ios_plugins_initializev, symObjAddr: 0x0, symBinAddr: 0x100005980, symSize: 0x4 }
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: __Z28godot_ios_plugins_initializev, symObjAddr: 0x0, symBinAddr: 0x100005980, symSize: 0x4 }
+  - { offsetInCU: 0x4C, offset: 0x4C, size: 0x8, addend: 0x0, symName: __Z30godot_ios_plugins_deinitializev, symObjAddr: 0x4, symBinAddr: 0x100005984, symSize: 0x4 }
+...

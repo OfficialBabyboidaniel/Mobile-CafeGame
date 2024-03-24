@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/Mobile-cafe Game.app</string>
+		<key>Architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>CFBundleIdentifier</key>
+		<string>com.spider.2002</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0.0</string>
+		<key>CFBundleVersion</key>
+		<string>1.0.0</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: danielspider2002@gmail.com (N3PFSP6S3X)</string>
+		<key>Team</key>
+		<string>94UB52G2HK</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2024-03-24T09:43:08Z</date>
+	<key>Name</key>
+	<string>Mobile-cafe Game</string>
+	<key>SchemeName</key>
+	<string>Mobile-cafe Game</string>
+</dict>
+</plist>
