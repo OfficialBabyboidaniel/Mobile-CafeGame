@@ -30,7 +30,9 @@ func _process(delta):
 			if in_rest_zone and rest_point != null : 
 				get_parent().global_position = lerp(get_parent().global_position, rest_point, 50 * delta)
 
-func item_entered_rest_zone(self_zone, item) -> void:
+
+#if item enters rest zone, set rest point to the zone's position
+func item_entered_rest_zone(self_zone, _item) -> void:
 		print("entered rest zone: ", self_zone)
 		rest_point = self_zone.global_position
 		print("restpoint pos: ", rest_point)
@@ -41,7 +43,7 @@ func item_left_rest_zone() -> void:
 		rest_point = null
 		in_rest_zone = false;
 
-func _on_input_event(viewport, event, shape_idx):
+func _on_input_event(_viewport, _event, _shape_idx):
 	selected = true;
 
 func set_selected(b_value) -> void:

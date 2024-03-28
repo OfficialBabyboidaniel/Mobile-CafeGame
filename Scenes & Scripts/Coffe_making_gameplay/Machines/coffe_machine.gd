@@ -15,10 +15,11 @@ signal coffe_is_done
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	rest_zone_ref.object_entered_rest_zone.connect(should_add_coffe_mug)
+	rest_zone_ref. object_left_rest_zone.connect(should_remove_coffe_mug)
 
 
 #check if it should add coffe_mug when an item enters coffe_machine_instance rest zone
-func should_add_coffe_mug(incoming_rest_zone, current_item):
+func should_add_coffe_mug(_incoming_rest_zone, current_item):
 	print("coffe muggelse : ", current_item)
 	if !is_instance_valid(current_item):
 		print("mug not valid returning")
@@ -27,9 +28,12 @@ func should_add_coffe_mug(incoming_rest_zone, current_item):
 		holding_object_at_rest_zone = true
 		coffemug = current_item
 
+func should_remove_coffe_mug():
+	holding_object_at_rest_zone = false
+	coffemug = null
 
 #Check if mug has been dropped in the rest zone
-func _process(delta):
+func _process(_delta):
 	if holding_object_at_rest_zone == true and !Input.is_action_pressed("Action"):
 		print("dropped mug at rest zone, setting variables")
 		holding_object_at_rest_zone = false
@@ -40,7 +44,7 @@ func _process(delta):
 
 
 #functionality when pressed on coffemachine
-func _on_input_event(_viewport, event, _shape_idx):
+func _on_input_event(_viewport, _event, _shape_idx):
 	if (
 		Input.is_action_pressed("Action")
 		and has_coffe_mug
