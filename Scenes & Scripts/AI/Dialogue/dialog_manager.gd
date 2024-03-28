@@ -5,7 +5,7 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 @onready var text_box_scene = preload("res://Scenes & Scripts/AI/Dialogue/text_box.tscn")
 
-var dialog_lines: Array[String] = []
+var dialog_lines
 var current_line_index = 0
 
 var text_box: TextBox
@@ -18,10 +18,11 @@ signal conversation_finished
 signal order_completed
 
 
-func start_dialog(position: Vector2, lines: Array[String]):
+func start_dialog(position: Vector2, lines):
 	if is_dialog_active:
 		return
 	dialog_lines = lines
+	print(dialog_lines)
 	text_box_position = position
 	_show_text_box()
 	is_dialog_active = true
