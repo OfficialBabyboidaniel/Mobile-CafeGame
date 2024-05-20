@@ -56,4 +56,6 @@ text = "Play"
 stream = ExtResource("2_mlure")
 bus = &"SFX"
 
+[connection signal="pressed" from="Control/MarginContainer/ShopContainer/Shop" to="." method="_on_shop_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/OptionsContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/ButtonContainer/Play" to="." method="_on_play_pressed"]
