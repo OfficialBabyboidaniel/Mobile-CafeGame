@@ -1,11 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://djyheny14nygc"]
+[gd_scene load_steps=5 format=3 uid="uid://djyheny14nygc"]
 
-[ext_resource type="Shader" path="res://Materials/Shaders/blur.gdshader" id="1_jjekj"]
 [ext_resource type="Script" path="res://Scenes & Scripts/UI/Menu/pause_menu.gd" id="1_wwqrl"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hl18s"]
-shader = ExtResource("1_jjekj")
-shader_parameter/lod = 0.0
 
 [sub_resource type="Animation" id="Animation_886yo"]
 length = 0.001
@@ -145,7 +140,6 @@ grow_vertical = 2
 script = ExtResource("1_wwqrl")
 
 [node name="ColorRect" type="ColorRect" parent="PauseMenu"]
-material = SubResource("ShaderMaterial_hl18s")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -153,6 +147,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+color = Color(0, 0, 0, 0.5)
 
 [node name="Nav_Bar" type="HBoxContainer" parent="PauseMenu"]
 layout_mode = 0
