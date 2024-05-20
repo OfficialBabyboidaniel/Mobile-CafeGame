@@ -8,10 +8,6 @@
 [node name="StartScene" type="Node2D"]
 
 [node name="Start_Menu" parent="." instance=ExtResource("1_4fvfs")]
-offset_left = 554.4
-offset_top = 449.6
-offset_right = 554.4
-offset_bottom = 449.6
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
