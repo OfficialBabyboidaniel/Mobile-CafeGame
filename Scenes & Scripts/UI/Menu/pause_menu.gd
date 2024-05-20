@@ -21,6 +21,7 @@ func resume():
 
 
 func pause():
+	
 	%PauseMenu.visible = true
 	$SettingsContainer/VBoxContainer/Resume.set_mouse_filter(MOUSE_FILTER_STOP)
 	get_tree().paused = true
